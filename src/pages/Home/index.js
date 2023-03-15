@@ -1,17 +1,23 @@
 import React, { useState, useEffect, useContext } from "react";
-import { FlatList, Button } from "react-native";
+import { FlatList, Button, StatusBar } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { AuthContext } from "../../context/auth";
 
-import { Container } from "./styles";
+import {
+  Container,
+  UsuarioNome,
+  ContainerUsuario,
+  TextoUsuario,
+  ContainerLista,
+} from "./styles";
 
 import api from "../../services/api";
 import Card from "../../components/Card";
 
 export default function Home() {
   const { signOut } = useContext(AuthContext);
-  const [dados, setDados] = useState("");
+  const [dados, setDados] = useState([]);
   const [userRa, setUserRa] = useState("");
 
   async function getRa() {
@@ -31,12 +37,19 @@ export default function Home() {
 
   return (
     <Container>
-      <FlatList
-        data={dados}
-        keyExtractor={(item) => String(item.id)}
-        renderItem={({ item }) => <Card data={item} valor={userRa} />}
-      />
-      <Button title="Sair da conta" onPress={() => signOut()} />
+      <ContainerUsuario>
+        <TextoUsuario>Olá</TextoUsuario>
+        <UsuarioNome>Katiana Hanisch</UsuarioNome>
+      </ContainerUsuario>
+      <ContainerLista>
+        <FlatList
+          data={dados}
+          keyExtractor={(item) => String(item.id)}
+          renderItem={({ item }) => <Card data={item} valor={userRa} />}
+        />
+      </ContainerLista>
+      <StatusBar backgroundColor="#1B4332" barStyle="dark-content" />
+      {/* <Button title="Sair da conta" onPress={() => signOut()} /> */}
     </Container>
   );
 }

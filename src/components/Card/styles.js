@@ -3,6 +3,10 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   align-items: center;
   justify-content: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #ffff;
+  margin-top: -40px;
 `;
 export const ContainerCard = styled.View`
   margin: 20px;
@@ -13,32 +17,17 @@ export const ContainerCard = styled.View`
   width: 90%;
 `;
 
-export const ContainerUsuario = styled.View`
-  padding: 15px;
-  width: 100%;
-`;
-
-export const TextoUsuario = styled.Text`
-  font-size: 18px;
-  color: #616668;
-`;
-
-export const UsuarioNome = styled.Text`
-  font-size: 22px;
-  color: #333533;
-  padding-left: 15px;
-`;
-
 export const ContainerIcon = styled.View`
-  flex: 1;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 50px;
+  border: 3px solid black;
 `;
 
 export const CardTitulo = styled.Text`
   font-size: 20px;
-  flex: 1;
   color: #616668;
 `;
 export const CardTexto = styled.Text`
@@ -46,3 +35,13 @@ export const CardTexto = styled.Text`
   font-size: 16px;
   color: #333533;
 `;
+export const ContainerItens = styled.View`
+  align-items: center;
+`;
+
+export const ContainerHeadCard = styled.View`
+  width: 100%;
+`;
+// export const Span = styled.View``;
+// export const Span = styled.View``;
+// export const Span = styled.View``;
