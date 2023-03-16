@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Modal } from "react-native";
 
 import {
   ContainerCard,
@@ -14,9 +15,21 @@ import {
   ButtonPendencias,
 } from "./styles";
 
+import ModalDetalhes from "../../components/ModalDetalhes";
+
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 export default function Dados({ data, valor }) {
+  const [modalVisivel, setModalVisivel] = useState(false);
+
+  function abrirModal() {
+    setModalVisivel(true);
+  }
+
+  function fecharModal() {
+    setModalVisivel(false);
+  }
+
   return (
     <>
       {data.ra == valor ? (
@@ -53,7 +66,7 @@ export default function Dados({ data, valor }) {
                 ) : (
                   <ContainerItensPendencias>
                     <CardTexto>Possui pendências</CardTexto>
-                    <ButtonPendencias>
+                    <ButtonPendencias onPress={abrirModal}>
                       <ButtonTexto>Ver pendências</ButtonTexto>
                     </ButtonPendencias>
                   </ContainerItensPendencias>
@@ -61,6 +74,13 @@ export default function Dados({ data, valor }) {
               </CardTexto>
             </ContainerTextos>
           </ContainerCard>
+          <Modal
+            visible={modalVisivel}
+            transparent={true}
+            animationType="slide"
+          >
+            <ModalDetalhes fechar={fecharModal} data={data} />
+          </Modal>
         </Container>
       ) : null}
     </>

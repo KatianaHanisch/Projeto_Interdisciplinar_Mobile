@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { FlatList, Button, StatusBar } from "react-native";
+import { FlatList, StatusBar } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { AuthContext } from "../../context/auth";
@@ -54,7 +54,7 @@ export default function Home() {
           renderItem={({ item }) => <Card data={item} valor={userRa} />}
         />
       </ContainerLista>
-      <StatusBar backgroundColor="#2D6A4F" barStyle="dark-content" />
+      <StatusBar backgroundColor="#2D6A4F" barStyle="light-content" />
       {/* <Button title="Sair da conta" onPress={() => signOut()} /> */}
     </Container>
   );

@@ -58,7 +58,7 @@ export const ContainerItensPendencias = styled.View`
   flex-direction: column;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
-  width: 10%;
+  width: 50%;
   height: 35px;
   border-radius: 5px;
   background-color: #465362;
