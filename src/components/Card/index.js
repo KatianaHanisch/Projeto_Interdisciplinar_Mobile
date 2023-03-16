@@ -6,8 +6,7 @@ import {
   ContainerIcon,
   CardTexto,
   Container,
-  ContainerItens,
-  ContainerHeadCard,
+  ContainerTextos,
 } from "./styles";
 
 import FontAwesome from "@expo/vector-icons/FontAwesome";
@@ -17,29 +16,29 @@ export default function Dados({ data, valor }) {
     <>
       {data.ra == valor ? (
         <Container>
-          <ContainerHeadCard>
-            <ContainerCard>
-              <ContainerIcon>
-                <FontAwesome name="money" color={"grey"} size={40} />
-              </ContainerIcon>
-              <ContainerItens>
-                <CardTitulo>Pendência Financeira</CardTitulo>
-                <CardTexto>
-                  {data.financeiro == "ok" ? "Sem Pendências" : data.financeiro}
-                </CardTexto>
-              </ContainerItens>
-            </ContainerCard>
+          <ContainerCard>
+            <ContainerIcon>
+              <FontAwesome name="money" color={"grey"} size={40} />
+            </ContainerIcon>
+            <ContainerTextos>
+              <CardTitulo>Pendência Financeira</CardTitulo>
+              <CardTexto>
+                {data.financeiro == "ok" ? "Sem Pendências" : data.financeiro}
+              </CardTexto>
+            </ContainerTextos>
+          </ContainerCard>
 
-            <ContainerCard>
-              <ContainerIcon>
-                <FontAwesome name="file" color={"grey"} size={35} />
-              </ContainerIcon>
+          <ContainerCard>
+            <ContainerIcon>
+              <FontAwesome name="file" color={"grey"} size={35} />
+            </ContainerIcon>
+            <ContainerTextos>
               <CardTitulo>Pendências de documentos</CardTitulo>
               <CardTexto>
                 {data.documentos == "ok" ? "Sem Pendências" : data.documentos}
               </CardTexto>
-            </ContainerCard>
-          </ContainerHeadCard>
+            </ContainerTextos>
+          </ContainerCard>
         </Container>
       ) : null}
     </>

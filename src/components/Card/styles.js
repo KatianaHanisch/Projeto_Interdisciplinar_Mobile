@@ -3,17 +3,18 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   align-items: center;
   justify-content: center;
+  background-color: #dee2e6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-color: #ffff;
-  margin-top: -40px;
+  padding-top: 15px;
 `;
 export const ContainerCard = styled.View`
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid black;
+  margin: 15px;
+  /* padding: 20px; */
+  min-height: 250px;
   align-items: center;
   border-radius: 5px;
+  background-color: #ffffff;
   width: 90%;
 `;
 
@@ -22,8 +23,10 @@ export const ContainerIcon = styled.View`
   justify-content: center;
   margin-bottom: 10px;
   padding: 12px;
-  border-radius: 50px;
-  border: 3px solid black;
+  width: 100%;
+  height: 90px;
+  background-color: #d9d9d9;
+  border-bottom-left-radius: 30px;
 `;
 
 export const CardTitulo = styled.Text`
@@ -35,13 +38,8 @@ export const CardTexto = styled.Text`
   font-size: 16px;
   color: #333533;
 `;
-export const ContainerItens = styled.View`
-  align-items: center;
-`;
+export const ContainerTextos = styled.View``;
 
-export const ContainerHeadCard = styled.View`
-  width: 100%;
-`;
 // export const Span = styled.View``;
 // export const Span = styled.View``;
 // export const Span = styled.View``;

@@ -6,9 +6,9 @@ import { AuthContext } from "../../context/auth";
 
 import {
   Container,
-  UsuarioNome,
   ContainerUsuario,
   TextoUsuario,
+  NomeUsuario,
   ContainerLista,
 } from "./styles";
 
@@ -19,10 +19,16 @@ export default function Home() {
   const { signOut } = useContext(AuthContext);
   const [dados, setDados] = useState([]);
   const [userRa, setUserRa] = useState("");
+  const [userNome, setUserNome] = useState("");
+  const [userSobrenome, setUserSobrenome] = useState("");
 
   async function getRa() {
-    const value = await AsyncStorage.getItem("ra");
+    const value = await AsyncStorage.getItem("@ra");
+    const nome = await AsyncStorage.getItem("@nome");
+    const sobrenome = await AsyncStorage.getItem("@sobrenome");
     setUserRa(JSON.parse(value));
+    setUserNome(JSON.parse(nome));
+    setUserSobrenome(JSON.parse(sobrenome));
   }
 
   async function getDados() {
@@ -39,7 +45,7 @@ export default function Home() {
     <Container>
       <ContainerUsuario>
         <TextoUsuario>Olá</TextoUsuario>
-        <UsuarioNome>Katiana Hanisch</UsuarioNome>
+        <NomeUsuario>{userNome + " " + userSobrenome}</NomeUsuario>
       </ContainerUsuario>
       <ContainerLista>
         <FlatList
@@ -48,7 +54,7 @@ export default function Home() {
           renderItem={({ item }) => <Card data={item} valor={userRa} />}
         />
       </ContainerLista>
-      <StatusBar backgroundColor="#1B4332" barStyle="dark-content" />
+      <StatusBar backgroundColor="#2D6A4F" barStyle="dark-content" />
       {/* <Button title="Sair da conta" onPress={() => signOut()} /> */}
     </Container>
   );
