@@ -7,6 +7,11 @@ import {
   CardTexto,
   Container,
   ContainerTextos,
+  Icon,
+  BorderIcon,
+  ContainerItensPendencias,
+  ButtonTexto,
+  ButtonPendencias,
 } from "./styles";
 
 import FontAwesome from "@expo/vector-icons/FontAwesome";
@@ -18,7 +23,11 @@ export default function Dados({ data, valor }) {
         <Container>
           <ContainerCard>
             <ContainerIcon>
-              <FontAwesome name="money" color={"grey"} size={40} />
+              <BorderIcon>
+                <Icon>
+                  <FontAwesome name="money" color={"grey"} size={40} />
+                </Icon>
+              </BorderIcon>
             </ContainerIcon>
             <ContainerTextos>
               <CardTitulo>Pendência Financeira</CardTitulo>
@@ -30,12 +39,25 @@ export default function Dados({ data, valor }) {
 
           <ContainerCard>
             <ContainerIcon>
-              <FontAwesome name="file" color={"grey"} size={35} />
+              <BorderIcon>
+                <Icon>
+                  <FontAwesome name="file" color={"grey"} size={35} />
+                </Icon>
+              </BorderIcon>
             </ContainerIcon>
             <ContainerTextos>
-              <CardTitulo>Pendências de documentos</CardTitulo>
+              <CardTitulo>Pendência Documentos</CardTitulo>
               <CardTexto>
-                {data.documentos == "ok" ? "Sem Pendências" : data.documentos}
+                {data.documentos == "ok" ? (
+                  "Sem Pendências"
+                ) : (
+                  <ContainerItensPendencias>
+                    <CardTexto>Possui pendências</CardTexto>
+                    <ButtonPendencias>
+                      <ButtonTexto>Ver pendências</ButtonTexto>
+                    </ButtonPendencias>
+                  </ContainerItensPendencias>
+                )}
               </CardTexto>
             </ContainerTextos>
           </ContainerCard>

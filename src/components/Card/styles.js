@@ -9,13 +9,13 @@ export const Container = styled.View`
   padding-top: 15px;
 `;
 export const ContainerCard = styled.View`
+  width: 90%;
+  height: 220px;
   margin: 15px;
-  /* padding: 20px; */
-  min-height: 250px;
   align-items: center;
   border-radius: 5px;
   background-color: #ffffff;
-  width: 90%;
+  border-bottom-right-radius: 30px;
 `;
 
 export const ContainerIcon = styled.View`
@@ -24,22 +24,48 @@ export const ContainerIcon = styled.View`
   margin-bottom: 10px;
   padding: 12px;
   width: 100%;
-  height: 90px;
-  background-color: #d9d9d9;
+  height: 100px;
+  background-color: #465362;
   border-bottom-left-radius: 30px;
+  border-radius: 5px;
+`;
+
+export const Icon = styled.View`
+  padding: 12px;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 2px solid #465362;
+`;
+
+export const BorderIcon = styled.View`
+  border-radius: 50px;
+  border: 2px solid #ffff;
 `;
 
 export const CardTitulo = styled.Text`
   font-size: 20px;
-  color: #616668;
+  color: #828a95;
 `;
 export const CardTexto = styled.Text`
-  padding-top: 5px;
-  font-size: 16px;
-  color: #333533;
+  font-size: 18px;
+  color: #616668;
 `;
-export const ContainerTextos = styled.View``;
+export const ContainerTextos = styled.View`
+  align-items: center;
+`;
 
-// export const Span = styled.View``;
-// export const Span = styled.View``;
-// export const Span = styled.View``;
+export const ContainerItensPendencias = styled.View`
+  flex-direction: column;
+`;
+export const ButtonPendencias = styled.TouchableOpacity`
+  width: 10%;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #465362;
+  align-items: center;
+  justify-content: center;
+`;
+export const ButtonTexto = styled.Text`
+  font-size: 18px;
+  color: #fff;
+`;

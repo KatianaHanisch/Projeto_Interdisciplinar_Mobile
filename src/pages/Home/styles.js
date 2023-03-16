@@ -8,11 +8,11 @@ export const Container = styled.View`
 `;
 
 export const ContainerUsuario = styled.View`
-  height: 170px;
+  height: 150px;
   width: 100%;
   background-color: #2d6a4f;
   margin-bottom: -50px;
-  padding: 15px;
+  padding: 10px;
 `;
 
 export const ContainerLista = styled.View`
