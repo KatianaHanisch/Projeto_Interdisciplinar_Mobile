@@ -54,7 +54,7 @@ export default function Home() {
           renderItem={({ item }) => <Card data={item} valor={userRa} />}
         />
       </ContainerLista>
-      <StatusBar backgroundColor="#2D6A4F" barStyle="light-content" />
+      <StatusBar backgroundColor="#2D6A4F" barStyle="dark-content" />
       {/* <Button title="Sair da conta" onPress={() => signOut()} /> */}
     </Container>
   );

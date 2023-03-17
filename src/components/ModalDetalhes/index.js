@@ -3,7 +3,7 @@ import { StatusBar } from "react-native";
 
 import {
   Container,
-  Titulo,
+  ModalTitulo,
   ContainerModal,
   ButtonPendencias,
   ButtonTexto,
@@ -15,19 +15,25 @@ import {
 
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
-export default function ModalDetalhes({ fechar, data }) {
+export default function ModalDetalhes({ fechar, data, tipo }) {
   return (
     <Container>
       <StatusBar backgroundColor="#ffff" barStyle="dark-content" />
       <ContainerModal>
         <BorderIcon>
           <Icon>
-            <FontAwesome name="money" color={"grey"} size={40} />
+            <FontAwesome
+              name={tipo == "documentos" ? "file" : "money"}
+              color={"grey"}
+              size={35}
+            />
           </Icon>
         </BorderIcon>
-        <Titulo>Detalhes das Pendências</Titulo>
         <ModalConteudo>
-          <ModalTexto>{data.documentos}</ModalTexto>
+          {/* <ModalTitulo>Detalhe das Pendências</ModalTitulo> */}
+          <ModalTexto>
+            {tipo == "documentos" ? data.documentos : data.financeiro}
+          </ModalTexto>
           <ButtonPendencias onPress={fechar}>
             <ButtonTexto>Voltar</ButtonTexto>
           </ButtonPendencias>

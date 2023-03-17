@@ -9,9 +9,9 @@ export const Container = styled.View`
 `;
 
 export const ContainerModal = styled.View`
-  height: 55%;
+  height: 40%;
   width: 100%;
-  background-color: #cad2c5;
+  background-color: #d9d9d9;
   /* border-radius: 15px; */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -20,30 +20,32 @@ export const ContainerModal = styled.View`
 `;
 export const Icon = styled.View`
   padding: 12px;
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: #fff;
   border: 2px solid #465362;
 `;
 
 export const BorderIcon = styled.View`
-  border-radius: 50px;
+  border-radius: 20px;
   border: 2px solid #ffff;
 `;
 export const ModalConteudo = styled.View`
   background-color: #ffff;
-  width: 97%;
-  height: 65%;
+  width: 100%;
+  height: 95%;
+  margin-top: 10px;
   border-radius: 10px;
   align-items: center;
-
-  padding-top: 20px;
+  padding-top: 10px;
 `;
-export const Titulo = styled.Text`
-  color: #000000;
-  font-size: 25px;
+export const ModalTitulo = styled.Text`
+  color: #6c757d;
+  font-size: 20px;
 `;
 export const ModalTexto = styled.Text`
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 25px;
+  color: #495057;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
   width: 50%;

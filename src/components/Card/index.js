@@ -21,14 +21,21 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 export default function Dados({ data, valor }) {
   const [modalVisivel, setModalVisivel] = useState(false);
+  const [tipoModal, setTipoModal] = useState("");
 
-  function abrirModal() {
+  function abrirModalDocumentos() {
     setModalVisivel(true);
+    setTipoModal("documentos");
+  }
+  function abrirModalFinanceiro() {
+    setModalVisivel(true);
+    setTipoModal("financeiro");
   }
 
   function fecharModal() {
     setModalVisivel(false);
   }
+  console.log(tipoModal);
 
   return (
     <>
@@ -41,11 +48,20 @@ export default function Dados({ data, valor }) {
                   <FontAwesome name="money" color={"grey"} size={40} />
                 </Icon>
               </BorderIcon>
+              <CardTitulo>Pendência Financeira</CardTitulo>
             </ContainerIcon>
             <ContainerTextos>
-              <CardTitulo>Pendência Financeira</CardTitulo>
               <CardTexto>
-                {data.financeiro == "ok" ? "Sem Pendências" : data.financeiro}
+                {data.financeiro == "ok" ? (
+                  "Sem Pendências"
+                ) : (
+                  <ContainerItensPendencias>
+                    <CardTexto>Possui pendências</CardTexto>
+                    <ButtonPendencias onPress={abrirModalFinanceiro}>
+                      <ButtonTexto>Ver pendência</ButtonTexto>
+                    </ButtonPendencias>
+                  </ContainerItensPendencias>
+                )}
               </CardTexto>
             </ContainerTextos>
           </ContainerCard>
@@ -57,17 +73,17 @@ export default function Dados({ data, valor }) {
                   <FontAwesome name="file" color={"grey"} size={35} />
                 </Icon>
               </BorderIcon>
+              <CardTitulo>Pendência Documentos</CardTitulo>
             </ContainerIcon>
             <ContainerTextos>
-              <CardTitulo>Pendência Documentos</CardTitulo>
               <CardTexto>
                 {data.documentos == "ok" ? (
                   "Sem Pendências"
                 ) : (
                   <ContainerItensPendencias>
                     <CardTexto>Possui pendências</CardTexto>
-                    <ButtonPendencias onPress={abrirModal}>
-                      <ButtonTexto>Ver pendências</ButtonTexto>
+                    <ButtonPendencias onPress={abrirModalDocumentos}>
+                      <ButtonTexto>Ver pendência</ButtonTexto>
                     </ButtonPendencias>
                   </ContainerItensPendencias>
                 )}
@@ -79,7 +95,7 @@ export default function Dados({ data, valor }) {
             transparent={true}
             animationType="slide"
           >
-            <ModalDetalhes fechar={fecharModal} data={data} />
+            <ModalDetalhes fechar={fecharModal} data={data} tipo={tipoModal} />
           </Modal>
         </Container>
       ) : null}

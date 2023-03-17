@@ -43,12 +43,13 @@ export const BorderIcon = styled.View`
 `;
 
 export const CardTitulo = styled.Text`
-  font-size: 20px;
-  color: #828a95;
+  font-size: 15px;
+  color: #ffffff;
 `;
 export const CardTexto = styled.Text`
-  font-size: 18px;
+  font-size: 22px;
   color: #616668;
+  margin-bottom: 20px;
 `;
 export const ContainerTextos = styled.View`
   align-items: center;
@@ -58,7 +59,7 @@ export const ContainerItensPendencias = styled.View`
   flex-direction: column;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
-  width: 50%;
+  width: 45%;
   height: 35px;
   border-radius: 5px;
   background-color: #465362;
