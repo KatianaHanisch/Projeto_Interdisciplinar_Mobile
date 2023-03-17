@@ -35,7 +35,6 @@ export default function Dados({ data, valor }) {
   function fecharModal() {
     setModalVisivel(false);
   }
-  console.log(tipoModal);
 
   return (
     <>
