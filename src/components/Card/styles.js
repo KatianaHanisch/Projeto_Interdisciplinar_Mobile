@@ -25,7 +25,7 @@ export const ContainerIcon = styled.View`
   padding: 12px;
   width: 100%;
   height: 100px;
-  background-color: #465362;
+  background-color: #04394e;
   border-bottom-left-radius: 30px;
   border-radius: 5px;
 `;
@@ -34,7 +34,7 @@ export const Icon = styled.View`
   padding: 12px;
   border-radius: 50px;
   background-color: #fff;
-  border: 2px solid #465362;
+  border: 2px solid #04394e;
 `;
 
 export const BorderIcon = styled.View`
@@ -47,8 +47,8 @@ export const CardTitulo = styled.Text`
   color: #ffffff;
 `;
 export const CardTexto = styled.Text`
-  font-size: 22px;
-  color: #616668;
+  font-size: 23px;
+  color: #666666;
   margin-bottom: 20px;
 `;
 export const ContainerTextos = styled.View`
@@ -62,7 +62,7 @@ export const ButtonPendencias = styled.TouchableOpacity`
   width: 45%;
   height: 35px;
   border-radius: 5px;
-  background-color: #465362;
+  background-color: #373b44;
   align-items: center;
   justify-content: center;
 `;

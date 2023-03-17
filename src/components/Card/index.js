@@ -44,7 +44,7 @@ export default function Dados({ data, valor }) {
             <ContainerIcon>
               <BorderIcon>
                 <Icon>
-                  <FontAwesome name="money" color={"grey"} size={40} />
+                  <FontAwesome name="money" color={"#666666"} size={40} />
                 </Icon>
               </BorderIcon>
               <CardTitulo>Pendência Financeira</CardTitulo>
@@ -69,7 +69,7 @@ export default function Dados({ data, valor }) {
             <ContainerIcon>
               <BorderIcon>
                 <Icon>
-                  <FontAwesome name="file" color={"grey"} size={35} />
+                  <FontAwesome name="file" color={"#666666"} size={35} />
                 </Icon>
               </BorderIcon>
               <CardTitulo>Pendência Documentos</CardTitulo>

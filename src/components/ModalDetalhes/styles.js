@@ -11,28 +11,17 @@ export const Container = styled.View`
 export const ContainerModal = styled.View`
   height: 40%;
   width: 100%;
-  background-color: #d9d9d9;
-  /* border-radius: 15px; */
+  background-color: #636363;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   align-items: center;
   justify-content: center;
 `;
-export const Icon = styled.View`
-  padding: 12px;
-  border-radius: 20px;
-  background-color: #fff;
-  border: 2px solid #465362;
-`;
 
-export const BorderIcon = styled.View`
-  border-radius: 20px;
-  border: 2px solid #ffff;
-`;
 export const ModalConteudo = styled.View`
   background-color: #ffff;
   width: 100%;
-  height: 95%;
+  height: 100%;
   margin-top: 10px;
   border-radius: 10px;
   align-items: center;
@@ -43,18 +32,18 @@ export const ModalTitulo = styled.Text`
   font-size: 20px;
 `;
 export const ModalTexto = styled.Text`
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 25px;
   color: #495057;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
-  width: 50%;
+  width: 40%;
   height: 35px;
   border-radius: 5px;
-  background-color: #465362;
+  background-color: #373b44;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;

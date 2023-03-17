@@ -10,7 +10,7 @@ export const Container = styled.View`
 export const ContainerUsuario = styled.View`
   height: 150px;
   width: 100%;
-  background-color: #2d6a4f;
+  background-color: #081c15;
   margin-bottom: -50px;
   padding: 10px;
 `;
