@@ -2,10 +2,12 @@ import React, { useState, useEffect, useContext } from "react";
 import { FlatList, StatusBar } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
+
 import { AuthContext } from "../../context/auth";
 
+import { Container } from "../../styles";
+
 import {
-  Container,
   ContainerUsuario,
   TextoUsuario,
   NomeUsuario,
