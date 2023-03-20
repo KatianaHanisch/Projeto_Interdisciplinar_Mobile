@@ -17,8 +17,11 @@
     "expo": "~48.0.5",
     "expo-keep-awake": "^12.0.1",
     "expo-status-bar": "~1.4.4",
+    "native-base": "^3.4.28",
     "react": "18.2.0",
     "react-native": "0.71.3",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-svg": "^12.1.1",
     "react-native-unimodules": "^0.14.10",
     "styled-components": "^5.3.8"
   },

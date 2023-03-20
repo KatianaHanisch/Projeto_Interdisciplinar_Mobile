@@ -20,6 +20,7 @@ export default function AppRoutes() {
         tabBarActiveTintColor: "#2a6041",
         headerShown: false,
         tabBarShowLabel: false,
+        tabBarHideOnKeyboard: true,
         tabBarStyle: {
           position: "absolute",
           backgroundColor: "#f8f9fa",

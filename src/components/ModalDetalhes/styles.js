@@ -5,13 +5,13 @@ export const Container = styled.View`
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 `;
 
 export const ContainerModal = styled.View`
   height: 40%;
   width: 100%;
-  background-color: #636363;
+  background-color: #2a2829;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   align-items: center;
