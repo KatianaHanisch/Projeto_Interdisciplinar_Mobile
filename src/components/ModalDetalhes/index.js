@@ -14,7 +14,12 @@ import {
 export default function ModalDetalhes({ fechar, data, tipo }) {
   return (
     <Container>
-      <StatusBar backgroundColor="#ffff" barStyle="dark-content" />
+      <StatusBar
+        animated={true}
+        barStyle={"dark-content"}
+        translucent={true}
+        backgroundColor=" rgba(0, 0, 0, 0.6)"
+      />
       <ContainerModal>
         <ModalConteudo>
           <ModalTitulo>Detalhe das Pendências:</ModalTitulo>

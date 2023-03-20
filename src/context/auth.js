@@ -9,6 +9,7 @@ export const AuthContext = createContext({});
 function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loadingAuth, setLoadingAuth] = useState(false);
+  const [erroLogin, setErroLogin] = useState("");
 
   async function signIn(ra, password) {
     setLoadingAuth(true);
@@ -31,6 +32,7 @@ function AuthProvider({ children }) {
 
       setLoadingAuth(false);
     } catch (err) {
+      setErroLogin("Usuário ou senha incorretos");
       console.log("ERRO AO LOGAR ", err);
       setLoadingAuth(false);
       throw err;
@@ -45,7 +47,7 @@ function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{ signed: !!user, user, signIn, signOut, loadingAuth }}
+      value={{ signed: !!user, user, signIn, signOut, loadingAuth, erroLogin }}
     >
       {children}
     </AuthContext.Provider>

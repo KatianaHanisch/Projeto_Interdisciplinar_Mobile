@@ -14,7 +14,7 @@ import {
 } from "./styles";
 
 export default function SignIn() {
-  const { signIn, loadingAuth } = useContext(AuthContext);
+  const { signIn, loadingAuth, erroLogin } = useContext(AuthContext);
 
   const [ra, setRa] = useState("");
   const [password, setPassword] = useState("");
