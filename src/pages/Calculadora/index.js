@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Keyboard } from "react-native";
 
 import {
   ContainerCalculadoraHead,
@@ -19,28 +20,31 @@ export default function Calculadora() {
   const [notaN1, setNotaN1] = useState("");
   const [notaN2, setNotaN2] = useState("");
   const [notaN3, setNotaN3] = useState("");
-  const [media, setMedia] = useState(0);
+  const [media, setMedia] = useState(media);
   const [mensagem, setMensagem] = useState("");
 
   function calcularMedia() {
     setMedia(
       (parseFloat(notaN1) + parseFloat(notaN2) + parseFloat(notaN3)) / 3
     );
+
+    Keyboard.dismiss();
+
     setNotaN1("");
     setNotaN2("");
     setNotaN3("");
 
-    if (media > 7 && media <= 10) {
-      setMensagem("Parabéns você foi aprovado!!");
-    } else if (media >= 4 && media < 7) {
-      setMensagem("Você ficou de exame nessa matéria");
-    } else if (media < 4) {
-      setMensagem("Infelizmente você reprovou nessa matéria");
-    } else {
-      setMensagem("Nota inválida");
-    }
-    console.log(media);
+    // if (media >= 7) {
+    //   setMensagem("Parabéns você foi aprovado!!");
+    // } else if (media >= 4 && media < 7) {
+    //   setMensagem("Você ficou de exame nessa matéria");
+    // } else if (media < 4) {
+    //   setMensagem("Infelizmente você reprovou nessa matéria");
+    // } else {
+    //   setMensagem("Nota inválida");
+    // }
   }
+
   return (
     <Container>
       <ContainerCalculadoraHead>
@@ -52,24 +56,27 @@ export default function Calculadora() {
             <Input
               placeholder="Digite sua nota N1"
               value={notaN1}
-              onChangeText={(value) => setNotaN1(value)}
+              maxLength={4}
               keyboardType="numeric"
+              onChangeText={(value) => setNotaN1(value)}
             />
           </AreaInput>
           <AreaInput>
             <Input
               placeholder="Digite sua nota N2"
               value={notaN2}
-              onChangeText={(value) => setNotaN2(value)}
+              maxLength={4}
               keyboardType="numeric"
+              onChangeText={(value) => setNotaN2(value)}
             />
           </AreaInput>
           <AreaInput>
             <Input
               placeholder="Digite sua nota N3"
               value={notaN3}
-              onChangeText={(value) => setNotaN3(value)}
               keyboardType="numeric"
+              maxLength={4}
+              onChangeText={(value) => setNotaN3(value)}
             />
           </AreaInput>
           <Button onPress={() => calcularMedia()}>
@@ -80,8 +87,8 @@ export default function Calculadora() {
       {media ? (
         <ContainerMedia>
           <Media>
-            <TextoMedia>Sua nota de média foi {media}</TextoMedia>
-            <TextoMedia>{mensagem}</TextoMedia>
+            <TextoMedia>Sua nota de média foi {media.toFixed(1)}</TextoMedia>
+            {/* <TextoMedia>{mensagem}</TextoMedia> */}
           </Media>
         </ContainerMedia>
       ) : (

@@ -5,7 +5,7 @@ export const Container = styled.View`
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 `;
 
 export const ContainerModal = styled.View`

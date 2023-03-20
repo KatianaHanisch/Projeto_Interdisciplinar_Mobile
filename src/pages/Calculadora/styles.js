@@ -23,7 +23,7 @@ export const ContainerInputs = styled.View`
   background-color: #dee2e6;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 `;
@@ -31,7 +31,7 @@ export const Inputs = styled.View`
   background-color: #ffff;
   width: 100%;
   align-items: center;
-  padding: 30px 0;
+  padding: 20px 0;
   border-radius: 20px;
 `;
 
@@ -55,7 +55,7 @@ export const Button = styled.TouchableOpacity`
   background-color: #373b44;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 5px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;
