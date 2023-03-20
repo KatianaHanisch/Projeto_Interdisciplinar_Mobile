@@ -1,11 +1,11 @@
 import styled from "styled-components/native";
 
 export const ContainerUsuario = styled.View`
-  height: 150px;
+  height: 160px;
   width: 100%;
-  background-color: #081c15;
+  background-color: #2a6041;
   margin-bottom: -50px;
-  padding: 10px;
+  padding: 15px 20px;
 `;
 
 export const ContainerLista = styled.View`

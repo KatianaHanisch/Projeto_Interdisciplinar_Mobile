@@ -18,7 +18,6 @@ import api from "../../services/api";
 import Card from "../../components/Card";
 
 export default function Home() {
-  const { signOut } = useContext(AuthContext);
   const [dados, setDados] = useState([]);
   const [userRa, setUserRa] = useState("");
   const [userNome, setUserNome] = useState("");
@@ -56,8 +55,7 @@ export default function Home() {
           renderItem={({ item }) => <Card data={item} valor={userRa} />}
         />
       </ContainerLista>
-      <StatusBar backgroundColor="#081C15" barStyle="light-content" />
-      {/* <Button title="Sair da conta" onPress={() => signOut()} /> */}
+      <StatusBar backgroundColor="#2a6041" barStyle="dark-content" />
     </Container>
   );
 }

@@ -7,7 +7,7 @@ export const Container = styled.View`
 `;
 
 export const ContainerCalculadoraHead = styled.View`
-  background-color: #000000;
+  background-color: #2a6041;
   width: 100%;
   height: 110px;
   justify-content: flex-start;
@@ -52,7 +52,7 @@ export const Button = styled.TouchableOpacity`
   width: 60%;
   height: 45px;
   border-radius: 5px;
-  background-color: #373b44;
+  background-color: #073b3a;
   align-items: center;
   justify-content: center;
   margin-top: 5px;

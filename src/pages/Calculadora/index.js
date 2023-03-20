@@ -20,13 +20,11 @@ export default function Calculadora() {
   const [notaN1, setNotaN1] = useState("");
   const [notaN2, setNotaN2] = useState("");
   const [notaN3, setNotaN3] = useState("");
-  const [media, setMedia] = useState(0);
   const [mensagem, setMensagem] = useState("");
 
   function calcularMedia() {
-    setMedia(
-      (parseFloat(notaN1) + parseFloat(notaN2) + parseFloat(notaN3)) / 3
-    );
+    let media =
+      (parseFloat(notaN1) + parseFloat(notaN2) + parseFloat(notaN3)) / 3;
 
     Keyboard.dismiss();
 
@@ -35,11 +33,23 @@ export default function Calculadora() {
     setNotaN3("");
 
     if (media >= 7) {
-      setMensagem("Parabéns você foi aprovado!!");
+      setMensagem(
+        "Sua média foi " + media.toFixed(1) + "\nParabéns você foi aprovado!!"
+      );
     } else if (media >= 4 && media < 7) {
-      setMensagem("Você ficou de exame nessa matéria");
+      setMensagem(
+        "Sua média foi " +
+          media.toFixed(1) +
+          "\nVocê ficou de exame nessa matéria\n Você precisa tirar " +
+          (10 - media).toFixed(1) +
+          " no exame"
+      );
     } else if (media < 4) {
-      setMensagem("Infelizmente você reprovou nessa matéria");
+      setMensagem(
+        "Sua média foi " +
+          media.toFixed(1) +
+          "\nInfelizmente você reprovou nessa matéria"
+      );
     } else {
       setMensagem("Nota inválida");
     }
@@ -84,10 +94,10 @@ export default function Calculadora() {
           </Button>
         </Inputs>
       </ContainerInputs>
-      {media ? (
+      {mensagem ? (
         <ContainerMedia>
           <Media>
-            <TextoMedia>Sua nota de média foi {media.toFixed(1)}</TextoMedia>
+            {/* <TextoMedia>Sua nota de média foi {media.toFixed(1)}</TextoMedia> */}
             <TextoMedia>{mensagem}</TextoMedia>
           </Media>
         </ContainerMedia>
