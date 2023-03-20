@@ -20,7 +20,7 @@ export default function Calculadora() {
   const [notaN1, setNotaN1] = useState("");
   const [notaN2, setNotaN2] = useState("");
   const [notaN3, setNotaN3] = useState("");
-  const [media, setMedia] = useState(media);
+  const [media, setMedia] = useState(0);
   const [mensagem, setMensagem] = useState("");
 
   function calcularMedia() {
@@ -34,15 +34,15 @@ export default function Calculadora() {
     setNotaN2("");
     setNotaN3("");
 
-    // if (media >= 7) {
-    //   setMensagem("Parabéns você foi aprovado!!");
-    // } else if (media >= 4 && media < 7) {
-    //   setMensagem("Você ficou de exame nessa matéria");
-    // } else if (media < 4) {
-    //   setMensagem("Infelizmente você reprovou nessa matéria");
-    // } else {
-    //   setMensagem("Nota inválida");
-    // }
+    if (media >= 7) {
+      setMensagem("Parabéns você foi aprovado!!");
+    } else if (media >= 4 && media < 7) {
+      setMensagem("Você ficou de exame nessa matéria");
+    } else if (media < 4) {
+      setMensagem("Infelizmente você reprovou nessa matéria");
+    } else {
+      setMensagem("Nota inválida");
+    }
   }
 
   return (
@@ -88,7 +88,7 @@ export default function Calculadora() {
         <ContainerMedia>
           <Media>
             <TextoMedia>Sua nota de média foi {media.toFixed(1)}</TextoMedia>
-            {/* <TextoMedia>{mensagem}</TextoMedia> */}
+            <TextoMedia>{mensagem}</TextoMedia>
           </Media>
         </ContainerMedia>
       ) : (
