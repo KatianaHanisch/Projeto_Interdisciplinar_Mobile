@@ -51,6 +51,7 @@ export default function QRCodePage() {
     setTimeout(() => {
       clearInterval(countdownInterval);
       setTimeLeft(0);
+      setQrValue("NA")
     }, timeBetweenRequests);
   }
 
