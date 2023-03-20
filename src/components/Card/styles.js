@@ -25,7 +25,7 @@ export const ContainerIcon = styled.View`
   padding: 12px;
   width: 100%;
   height: 100px;
-  background-color: #04394e;
+  background-color: #253342;
   border-bottom-left-radius: 30px;
   border-radius: 5px;
 `;
@@ -59,10 +59,10 @@ export const ContainerItensPendencias = styled.View`
   flex-direction: column;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
-  width: 45%;
-  height: 35px;
+  width: 38%;
+  padding: 8px;
   border-radius: 5px;
-  background-color: #373b44;
+  background-color: #2a2829;
   align-items: center;
   justify-content: center;
 `;

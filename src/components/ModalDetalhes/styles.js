@@ -37,10 +37,10 @@ export const ModalTexto = styled.Text`
   color: #495057;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
-  width: 40%;
-  height: 35px;
+  width: 38%;
+  padding: 8px;
   border-radius: 5px;
-  background-color: #373b44;
+  background-color: #2a2829;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
