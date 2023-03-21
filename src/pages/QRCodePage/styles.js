@@ -38,6 +38,9 @@ export const BackgroundQrCode = styled.View`
   width: 85%;
   align-items: center;
   border-radius: 10px;
+  min-height: 295px;
+  display: flex;
+  justify-content: center;
 `;
 export const Button = styled.TouchableOpacity`
   width: 55%;
