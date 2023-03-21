@@ -55,7 +55,7 @@ export default function Home() {
           renderItem={({ item }) => <Card data={item} valor={userRa} />}
         />
       </ContainerLista>
-      <StatusBar backgroundColor="#2a6041" barStyle="dark-content" />
+      <StatusBar backgroundColor="#2a6041" barStyle="light-content" />
     </Container>
   );
 }

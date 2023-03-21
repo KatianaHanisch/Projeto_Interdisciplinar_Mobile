@@ -10,6 +10,7 @@ import {
   Button,
   ButtonTexto,
   ContainerQRCode,
+  BackgroundQrCode,
 } from "./styles";
 
 export default function QRCodePage() {
@@ -68,11 +69,13 @@ export default function QRCodePage() {
         <Texto>QR-Code</Texto>
       </ContainerQRCodeHead>
       <ContainerQRCode>
-        {qrValue == "" ? (
-          <ActivityIndicator size={100} color="green" />
-        ) : (
-          <QRCode size={230} value={qrValue ? qrValue : "NA"} />
-        )}
+        <BackgroundQrCode>
+          {qrValue == "" ? (
+            <ActivityIndicator size={100} color="green" />
+          ) : (
+            <QRCode size={220} value={qrValue ? qrValue : "NA"} />
+          )}
+        </BackgroundQrCode>
       </ContainerQRCode>
 
       {timeLeft > 0 ? (

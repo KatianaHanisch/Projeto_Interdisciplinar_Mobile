@@ -9,36 +9,44 @@ export const Container = styled.View`
 export const ContainerQRCodeHead = styled.View`
   background-color: #2a6041;
   width: 100%;
-  height: 110px;
+  height: 125px;
   justify-content: flex-start;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
   align-items: center;
 `;
 export const Texto = styled.Text`
   margin-top: 20px;
   font-size: 25px;
-  color: #fff;
+  color: #ffffff;
 `;
 export const ContainerQRCode = styled.View`
   background-color: #dee2e6;
   align-items: center;
   width: 100%;
   padding: 15px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding-top: 50px ;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 60px;
   min-height: 295px;
   display: flex;
   justify-content: center;
 `;
+
+export const BackgroundQrCode = styled.View`
+  background-color: #ffffff;
+  padding: 25px;
+  width: 85%;
+  align-items: center;
+  border-radius: 10px;
+`;
 export const Button = styled.TouchableOpacity`
-  width: 60%;
+  width: 55%;
   height: 45px;
   border-radius: 5px;
   background-color: #2a2829;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 15px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;

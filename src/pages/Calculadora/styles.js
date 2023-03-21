@@ -9,9 +9,9 @@ export const Container = styled.View`
 export const ContainerCalculadoraHead = styled.View`
   background-color: #2a6041;
   width: 100%;
-  height: 110px;
+  height: 120px;
   justify-content: flex-start;
-  margin-bottom: -20px;
+  margin-bottom: -25px;
   align-items: center;
 `;
 export const Texto = styled.Text`
@@ -24,8 +24,8 @@ export const ContainerInputs = styled.View`
   align-items: center;
   width: 100%;
   padding: 15px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 `;
 export const Inputs = styled.View`
   background-color: #ffff;
