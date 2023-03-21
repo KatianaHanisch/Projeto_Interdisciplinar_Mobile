@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Home from "../pages/Home";
 import Calculadora from "../pages/Calculadora";
-import QRCodePage from "../pages/QRCode";
+import QRCodePage from "../pages/QRCodePage";
 import PerfilUsuario from "../pages/PerfilUsuario";
 
 import Feather from "@expo/vector-icons/Feather";

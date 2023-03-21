@@ -39,8 +39,6 @@ export default function SignIn() {
     signIn(ra, password);
   }
 
-  console.log(erroLogin);
-
   return (
     <Background>
       <Container>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { ActivityIndicator } from 'react-native';
+import { ActivityIndicator } from "react-native";
 import QRCode from "react-native-qrcode-svg";
 
 import {
@@ -13,7 +13,7 @@ import {
 } from "./styles";
 
 export default function QRCodePage() {
-  const [qrValue, setQrValue] = useState('NA');
+  const [qrValue, setQrValue] = useState("NA");
   const [loading, setLoading] = useState(false);
   const [timeLeft, setTimeLeft] = useState(0);
 
@@ -28,15 +28,22 @@ export default function QRCodePage() {
     const nome = await AsyncStorage.getItem("@nome");
     const sobrenome = await AsyncStorage.getItem("@sobrenome");
 
-    setQrValue('');
+    setQrValue("");
     const timeBetweenRequests = 10000; // 10 seconds
     const nextRequestTime = Date.now() + timeBetweenRequests;
 
     setTimeout(() => {
       setQrValue(
-        "R.A: " + JSON.parse(ra) + "\n" +
-        "Nome: " + JSON.parse(nome) + " " + JSON.parse(sobrenome) + "\n " +
-        "Data: " + new Date().toLocaleString()
+        "R.A: " +
+          JSON.parse(ra) +
+          "\n" +
+          "Nome: " +
+          JSON.parse(nome) +
+          " " +
+          JSON.parse(sobrenome) +
+          "\n " +
+          "Data: " +
+          new Date().toLocaleString()
       );
       setLoading(false);
       setTimeLeft(0);
@@ -51,7 +58,7 @@ export default function QRCodePage() {
     setTimeout(() => {
       clearInterval(countdownInterval);
       setTimeLeft(0);
-      setQrValue("NA")
+      setQrValue("NA");
     }, timeBetweenRequests);
   }
 
@@ -75,7 +82,6 @@ export default function QRCodePage() {
           <ButtonTexto>Gerar QR-Code</ButtonTexto>
         </Button>
       )}
-
     </Container>
   );
 }
