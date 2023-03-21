@@ -14,10 +14,15 @@ export const ContainerQRCodeHead = styled.View`
   margin-bottom: -30px;
   align-items: center;
 `;
-export const Texto = styled.Text`
+export const TextoTitulo = styled.Text`
   margin-top: 20px;
   font-size: 25px;
   color: #ffffff;
+`;
+export const Texto = styled.Text`
+  margin-top: 20px;
+  font-size: 25px;
+  color: #2a2829;
 `;
 export const ContainerQRCode = styled.View`
   background-color: #dee2e6;

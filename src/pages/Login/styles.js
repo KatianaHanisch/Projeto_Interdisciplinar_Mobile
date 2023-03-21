@@ -40,7 +40,7 @@ export const ContainerAlert = styled.View`
 
 export const TextoAlerta = styled.Text`
   color: #ffff;
-  font-size: 17px;
+  font-size: 15px;
   padding: 0 5px;
 `;
 export const SubmitButton = styled.TouchableOpacity`
@@ -48,7 +48,6 @@ export const SubmitButton = styled.TouchableOpacity`
   height: 45px;
   border-radius: 8px;
   background-color: #2a2829;
-  margin-top: 10px;
   align-items: center;
   justify-content: center;
 `;

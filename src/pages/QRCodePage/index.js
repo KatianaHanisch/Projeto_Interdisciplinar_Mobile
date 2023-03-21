@@ -12,6 +12,7 @@ import {
   ButtonTexto,
   ContainerQRCode,
   BackgroundQrCode,
+  TextoTitulo,
 } from "./styles";
 
 export default function QRCodePage() {
@@ -70,7 +71,7 @@ export default function QRCodePage() {
   return (
     <Container>
       <ContainerQRCodeHead>
-        <Texto>QR-Code</Texto>
+        <TextoTitulo>QR-Code</TextoTitulo>
       </ContainerQRCodeHead>
       <ContainerQRCode>
         <BackgroundQrCode>

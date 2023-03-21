@@ -25,7 +25,7 @@ export const ContainerIcon = styled.View`
   padding: 12px;
   width: 100%;
   height: 100px;
-  background-color: #2a2829;
+  background-color: #171f25;
   border-bottom-left-radius: 30px;
   border-radius: 5px;
 `;

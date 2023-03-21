@@ -66,10 +66,9 @@ export default function SignIn() {
             keyboardType="numeric"
           />
         </AreaInput>
-
         {open && (
           <ContainerAlert>
-            <Ionicons name="alert-circle-outline" size={30} color={"#ffffff"} />
+            <Ionicons name="alert-circle-outline" size={28} color={"#ffffff"} />
             <TextoAlerta>{erroLogin}</TextoAlerta>
           </ContainerAlert>
         )}
