@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ActivityIndicator } from "react-native";
 import QRCode from "react-native-qrcode-svg";
+import * as Progress from 'react-native-progress';
 
 import {
   ContainerQRCodeHead,
@@ -30,32 +31,35 @@ export default function QRCodePage() {
     const sobrenome = await AsyncStorage.getItem("@sobrenome");
 
     setQrValue("");
-    const timeBetweenRequests = 10000; // 10 seconds
+    const timeBetweenRequests = 10000; //tempo que dura o qrcode
     const nextRequestTime = Date.now() + timeBetweenRequests;
 
     setTimeout(() => {
       setQrValue(
         "R.A: " +
-          JSON.parse(ra) +
-          "\n" +
-          "Nome: " +
-          JSON.parse(nome) +
-          " " +
-          JSON.parse(sobrenome) +
-          "\n " +
-          "Data: " +
-          new Date().toLocaleString()
+        JSON.parse(ra) +
+        "\n" +
+        "Nome: " +
+        JSON.parse(nome) +
+        " " +
+        JSON.parse(sobrenome) +
+        "\n " +
+        "Data: " +
+        new Date().toLocaleString()
       );
       setLoading(false);
       setTimeLeft(0);
     }, 1000);
 
-    setTimeLeft(timeBetweenRequests);
+    setTimeout(() => {
+      setTimeLeft(timeBetweenRequests);
+    }, 1000);
+
     const countdownInterval = setInterval(() => {
       const timeLeft = Math.max(nextRequestTime - Date.now(), 0);
       setTimeLeft(timeLeft);
-    }, 1000);
 
+    }, 1000);
     setTimeout(() => {
       clearInterval(countdownInterval);
       setTimeLeft(0);
@@ -79,7 +83,12 @@ export default function QRCodePage() {
       </ContainerQRCode>
 
       {timeLeft > 0 ? (
-        <Texto>QR-Code valido por {Math.ceil(timeLeft / 1000)}s</Texto>
+        <Progress.Bar
+          progress={Math.ceil(timeLeft / 1000) / 10} //divide por 10 pois são 10 segundos de duração
+          width={250}
+          color={'green'}
+          size={15}
+        />
       ) : (
         <Button disabled={loading} onPress={() => getRa()}>
           <ButtonTexto>Gerar QR-Code</ButtonTexto>
