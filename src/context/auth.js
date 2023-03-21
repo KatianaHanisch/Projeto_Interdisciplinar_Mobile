@@ -32,12 +32,16 @@ function AuthProvider({ children }) {
 
       setLoadingAuth(false);
     } catch (err) {
-      setErroLogin("Usuário ou senha incorretos");
+      setErroLogin("Usuário ou senha incorreto");
       console.log("ERRO AO LOGAR ", err);
       setLoadingAuth(false);
       throw err;
     }
   }
+
+  const limpaErro = () => {
+    setErroLogin("");
+  };
 
   async function signOut() {
     await AsyncStorage.clear().then(() => {
@@ -47,7 +51,15 @@ function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{ signed: !!user, user, signIn, signOut, loadingAuth, erroLogin }}
+      value={{
+        signed: !!user,
+        user,
+        signIn,
+        signOut,
+        loadingAuth,
+        erroLogin,
+        limpaErro,
+      }}
     >
       {children}
     </AuthContext.Provider>

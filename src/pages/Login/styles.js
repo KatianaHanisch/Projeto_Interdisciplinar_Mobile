@@ -25,6 +25,24 @@ export const Input = styled.TextInput`
   color: #121212;
   margin-bottom: 15px;
 `;
+
+export const ContainerAlert = styled.View`
+  width: 90%;
+  height: 45px;
+  background-color: red;
+  border-radius: 8px;
+  margin-top: -5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 0 15px;
+`;
+
+export const TextoAlerta = styled.Text`
+  color: #ffff;
+  font-size: 17px;
+  padding: 0 5px;
+`;
 export const SubmitButton = styled.TouchableOpacity`
   width: 90%;
   height: 45px;

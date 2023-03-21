@@ -1,18 +1,5 @@
-import React, { useState, useContext } from "react";
-import { Platform, ActivityIndicator } from "react-native";
-
-import {
-  Stack,
-  Alert,
-  IconButton,
-  HStack,
-  VStack,
-  CloseIcon,
-  Text,
-  Center,
-  NativeBaseProvider,
-  Box,
-} from "native-base";
+import React, { useState, useContext, useEffect } from "react";
+import { ActivityIndicator } from "react-native";
 
 import { AuthContext } from "../../context/auth";
 
@@ -24,20 +11,39 @@ import {
   Input,
   SubmitButton,
   SubmitText,
+  ContainerAlert,
+  TextoAlerta,
 } from "./styles";
 
+import { Ionicons } from "@expo/vector-icons";
+
 export default function SignIn() {
-  const { signIn, loadingAuth, erroLogin } = useContext(AuthContext);
+  const { signIn, loadingAuth, erroLogin, limpaErro } = useContext(AuthContext);
 
   const [ra, setRa] = useState("");
   const [password, setPassword] = useState("");
-  const [show, setShow] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   function handleLogin() {
     if (ra === "" || password === "") return;
 
     signIn(ra, password);
   }
+
+  useEffect(() => {
+    if (!erroLogin) {
+      setOpen(false);
+      return;
+    }
+
+    setOpen(true);
+
+    const timer = setTimeout(() => {
+      setOpen(false);
+      limpaErro();
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [erroLogin]);
 
   return (
     <Background>
@@ -60,32 +66,14 @@ export default function SignIn() {
             keyboardType="numeric"
           />
         </AreaInput>
-        <NativeBaseProvider>
-          <Box w="100%" alignItems="center" mx="auto">
-            <Alert w="100%" status="error">
-              <VStack space={2} flexShrink={2} w="100%">
-                <HStack flexShrink={1} space={2} justifyContent="space-between">
-                  <HStack space={2} flexShrink={1}>
-                    <Alert.Icon mt="1" />
-                    <Text fontSize="md" color="coolGray.800">
-                      Usuário ou senha incorreta
-                    </Text>
-                  </HStack>
-                  <IconButton
-                    variant="unstyled"
-                    _focus={{
-                      borderWidth: 0,
-                    }}
-                    icon={<CloseIcon size="3" />}
-                    _icon={{
-                      color: "coolGray.600",
-                    }}
-                  />
-                </HStack>
-              </VStack>
-            </Alert>
-          </Box>
-        </NativeBaseProvider>
+
+        {open && (
+          <ContainerAlert>
+            <Ionicons name="alert-circle-outline" size={30} color={"#ffffff"} />
+            <TextoAlerta>{erroLogin}</TextoAlerta>
+          </ContainerAlert>
+        )}
+
         <SubmitButton activeOpacity={0.7} onPress={handleLogin}>
           {loadingAuth ? (
             <ActivityIndicator size={20} color="#FFF" />
