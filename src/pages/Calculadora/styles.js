@@ -48,6 +48,21 @@ export const Input = styled.TextInput`
   margin-bottom: 15px;
 `;
 
+export const ContainerErro = styled.View`
+  background-color: #ff0000;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+`;
+
+export const MensagemErro = styled.Text`
+  color: #ffff;
+  font-size: 18px;
+`;
+
 export const Button = styled.TouchableOpacity`
   width: 60%;
   height: 45px;
@@ -69,15 +84,40 @@ export const ContainerMedia = styled.View`
 `;
 export const TextoMedia = styled.Text`
   margin-top: 20px;
-  font-size: 23px;
+  font-size: 20px;
   color: #373b44;
 `;
 
 export const Media = styled.View`
-  background-color: #ffff;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: -10px;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+`;
+
+export const IconContainer = styled.View`
+  background-color: #c6c6c6;
+  padding: 5px;
+  border-radius: 50px;
+  margin-bottom: -20px;
+  z-index: 9;
+`;
+
+export const IconBorder = styled.View`
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 50px;
+`;
+
+export const NovoContainer = styled.View`
+  background-color: #cacaca;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 100%;
   width: 90%;
   align-items: center;
+  padding: 0 8px;
 `;

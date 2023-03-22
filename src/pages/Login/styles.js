@@ -36,6 +36,7 @@ export const ContainerAlert = styled.View`
   justify-content: flex-start;
   flex-direction: row;
   padding: 0 15px;
+  margin-bottom: 10px;
 `;
 
 export const TextoAlerta = styled.Text`
