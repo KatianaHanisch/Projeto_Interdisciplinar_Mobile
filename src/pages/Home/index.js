@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
-import { FlatList, StatusBar } from "react-native";
+import {
+  FlatList,
+  StatusBar,
+  RefreshControl,
+  ScrollView,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+} from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
-import { AuthContext } from "../../context/auth";
-
-import { Container } from "../../styles";
 
 import {
   ContainerUsuario,
@@ -22,6 +26,7 @@ export default function Home() {
   const [userRa, setUserRa] = useState("");
   const [userNome, setUserNome] = useState("");
   const [userSobrenome, setUserSobrenome] = useState("");
+  const [refreshing, setRefreshing] = React.useState(false);
 
   async function getRa() {
     const value = await AsyncStorage.getItem("@ra");
@@ -33,9 +38,17 @@ export default function Home() {
   }
 
   async function getDados() {
-    const response = await api.get("/dados");
-    setDados(response.data);
+    const { data } = await api.get("/dados");
+    setDados(data);
   }
+
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    getDados();
+    setTimeout(() => {
+      setRefreshing(false);
+    }, 3000);
+  }, []);
 
   useEffect(() => {
     getDados();
@@ -43,19 +56,33 @@ export default function Home() {
   }, []);
 
   return (
-    <Container>
-      <ContainerUsuario>
-        <TextoUsuario>Olá</TextoUsuario>
-        <NomeUsuario>{userNome + " " + userSobrenome}</NomeUsuario>
-      </ContainerUsuario>
-      <ContainerLista>
-        <FlatList
-          data={dados}
-          keyExtractor={(item) => String(item.id)}
-          renderItem={({ item }) => <Card data={item} valor={userRa} />}
-        />
-      </ContainerLista>
+    <SafeAreaView>
+      <ScrollView
+        contentContainerStyle={styles.scrollView}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
+      >
+        <ContainerUsuario>
+          <TextoUsuario>Olá</TextoUsuario>
+          <NomeUsuario>{userNome + " " + userSobrenome}</NomeUsuario>
+        </ContainerUsuario>
+        <ContainerLista>
+          {dados.map((item) => (
+            <Card key={item.id} data={item} valor={userRa} />
+          ))}
+        </ContainerLista>
+      </ScrollView>
       <StatusBar backgroundColor="#2a6041" barStyle="light-content" />
-    </Container>
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  scrollView: {
+    flex: 1,
+    backgroundColor: "#dee2e6",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});

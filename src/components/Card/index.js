@@ -17,8 +17,6 @@ import {
 
 import ModalDetalhes from "../../components/ModalDetalhes";
 
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-
 import { Ionicons } from "@expo/vector-icons";
 
 export default function Dados({ data, valor }) {
@@ -46,7 +44,6 @@ export default function Dados({ data, valor }) {
             <ContainerIcon>
               <BorderIcon>
                 <Icon>
-                  {/* <FontAwesome name="money" color={"#666666"} size={40} /> */}
                   <Ionicons name="cash-outline" size={40} color={"#666666"} />
                 </Icon>
               </BorderIcon>
@@ -71,7 +68,6 @@ export default function Dados({ data, valor }) {
             <ContainerIcon>
               <BorderIcon>
                 <Icon>
-                  {/* <FontAwesome name="file" color={"#666666"} size={35} /> */}
                   <Ionicons
                     name="documents-outline"
                     size={35}
