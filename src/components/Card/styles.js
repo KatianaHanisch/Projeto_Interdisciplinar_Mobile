@@ -19,13 +19,13 @@ export const ContainerCard = styled.View`
 `;
 
 export const ContainerIcon = styled.View`
+  width: 100%;
+  height: 130px;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
   padding: 12px;
-  width: 100%;
-  height: 100px;
-  background-color: #171f25;
+  background-color: #45444e;
   border-bottom-left-radius: 30px;
   border-radius: 5px;
 `;
@@ -43,8 +43,9 @@ export const BorderIcon = styled.View`
 `;
 
 export const CardTitulo = styled.Text`
-  font-size: 15px;
-  color: #ffffff;
+  font-size: 12px;
+  color: #bec3bc;
+  padding-top: 5px;
 `;
 export const CardTexto = styled.Text`
   font-size: 23px;
@@ -56,13 +57,14 @@ export const ContainerTextos = styled.View`
 `;
 
 export const ContainerItensPendencias = styled.View`
-  flex-direction: column;
+  padding-top: 20px;
 `;
+
 export const ButtonPendencias = styled.TouchableOpacity`
   width: 38%;
   padding: 8px;
   border-radius: 5px;
-  background-color: #253342;
+  background-color: #e70e02;
   align-items: center;
   justify-content: center;
 `;

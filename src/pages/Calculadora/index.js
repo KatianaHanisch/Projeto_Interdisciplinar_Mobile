@@ -124,7 +124,7 @@ export default function Calculadora() {
           <NovoContainer>
             <IconContainer>
               <IconBorder>
-                <Ionicons name="book-outline" size={28} color={"#000000"} />
+                <Ionicons name="reader-outline" size={28} color={"#000000"} />
               </IconBorder>
             </IconContainer>
             <Media>
