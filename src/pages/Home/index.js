@@ -5,6 +5,7 @@ import {
   ScrollView,
   SafeAreaView,
   StyleSheet,
+  ActivityIndicator,
 } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -16,6 +17,8 @@ import {
   ContainerLista,
 } from "./styles";
 
+import { Container } from "../../styles";
+
 import api from "../../services/api";
 import Card from "../../components/Card";
 
@@ -25,6 +28,7 @@ export default function Home() {
   const [usuarioNome, setUsuarioNome] = useState("");
   const [usuarioSobrenome, setUsuarioSobrenome] = useState("");
   const [atualizar, setAtualizar] = React.useState(false);
+  const [carregendoAplicacao, setCarregandoAplicacao] = useState(true);
 
   async function getRa() {
     const raUsuario = await AsyncStorage.getItem("@ra");
@@ -38,6 +42,7 @@ export default function Home() {
   async function getDados() {
     const { data } = await api.get("/dados");
     setDados(data);
+    setCarregandoAplicacao(false);
   }
 
   const onRefresh = React.useCallback(() => {
@@ -53,28 +58,35 @@ export default function Home() {
     getDados();
     getRa();
   }, []);
-
-  return (
-    <SafeAreaView>
-      <ScrollView
-        contentContainerStyle={styles.scrollView}
-        refreshControl={
-          <RefreshControl refreshing={atualizar} onRefresh={onRefresh} />
-        }
-      >
-        <ContainerUsuario>
-          <TextoUsuario>Olá</TextoUsuario>
-          <NomeUsuario>{usuarioNome + " " + usuarioSobrenome}</NomeUsuario>
-        </ContainerUsuario>
-        <ContainerLista>
-          {dados.map((item) => (
-            <Card key={item.id} data={item} valor={usuarioRa} />
-          ))}
-        </ContainerLista>
-      </ScrollView>
-      <StatusBar backgroundColor="#2a6041" barStyle="light-content" />
-    </SafeAreaView>
-  );
+  if (carregendoAplicacao) {
+    return (
+      <Container>
+        <ActivityIndicator color={"#2a6041"} size={55} />
+      </Container>
+    );
+  } else {
+    return (
+      <SafeAreaView>
+        <ScrollView
+          contentContainerStyle={styles.scrollView}
+          refreshControl={
+            <RefreshControl refreshing={atualizar} onRefresh={onRefresh} />
+          }
+        >
+          <ContainerUsuario>
+            <TextoUsuario>Olá</TextoUsuario>
+            <NomeUsuario>{usuarioNome + " " + usuarioSobrenome}</NomeUsuario>
+          </ContainerUsuario>
+          <ContainerLista>
+            {dados.map((item) => (
+              <Card key={item.id} data={item} valor={usuarioRa} />
+            ))}
+          </ContainerLista>
+        </ScrollView>
+        <StatusBar backgroundColor="#2a6041" barStyle="light-content" />
+      </SafeAreaView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
