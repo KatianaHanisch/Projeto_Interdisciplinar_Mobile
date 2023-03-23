@@ -34,7 +34,7 @@ export const Icon = styled.View`
   padding: 12px;
   border-radius: 50px;
   background-color: #fff;
-  border: 2px solid #2a2829;
+  border: 2px solid #45444e;
 `;
 
 export const BorderIcon = styled.View`
@@ -45,7 +45,7 @@ export const BorderIcon = styled.View`
 export const CardTitulo = styled.Text`
   font-size: 12px;
   color: #bec3bc;
-  padding-top: 5px;
+  padding-top: 3px;
 `;
 export const CardTexto = styled.Text`
   font-size: 23px;

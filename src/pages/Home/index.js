@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import {
-  FlatList,
   StatusBar,
   RefreshControl,
   ScrollView,
   SafeAreaView,
   StyleSheet,
-  Text,
 } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -23,18 +21,18 @@ import Card from "../../components/Card";
 
 export default function Home() {
   const [dados, setDados] = useState([]);
-  const [userRa, setUserRa] = useState("");
-  const [userNome, setUserNome] = useState("");
-  const [userSobrenome, setUserSobrenome] = useState("");
-  const [refreshing, setRefreshing] = React.useState(false);
+  const [usuarioRa, setUsuarioRa] = useState("");
+  const [usuarioNome, setUsuarioNome] = useState("");
+  const [usuarioSobrenome, setUsuarioSobrenome] = useState("");
+  const [atualizar, setAtualizar] = React.useState(false);
 
   async function getRa() {
-    const value = await AsyncStorage.getItem("@ra");
+    const raUsuario = await AsyncStorage.getItem("@ra");
     const nome = await AsyncStorage.getItem("@nome");
     const sobrenome = await AsyncStorage.getItem("@sobrenome");
-    setUserRa(JSON.parse(value));
-    setUserNome(JSON.parse(nome));
-    setUserSobrenome(JSON.parse(sobrenome));
+    setUsuarioRa(JSON.parse(raUsuario));
+    setUsuarioNome(JSON.parse(nome));
+    setUsuarioSobrenome(JSON.parse(sobrenome));
   }
 
   async function getDados() {
@@ -43,10 +41,11 @@ export default function Home() {
   }
 
   const onRefresh = React.useCallback(() => {
-    setRefreshing(true);
+    setAtualizar(true);
     getDados();
+
     setTimeout(() => {
-      setRefreshing(false);
+      setAtualizar(false);
     }, 3000);
   }, []);
 
@@ -60,16 +59,16 @@ export default function Home() {
       <ScrollView
         contentContainerStyle={styles.scrollView}
         refreshControl={
-          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+          <RefreshControl refreshing={atualizar} onRefresh={onRefresh} />
         }
       >
         <ContainerUsuario>
           <TextoUsuario>Olá</TextoUsuario>
-          <NomeUsuario>{userNome + " " + userSobrenome}</NomeUsuario>
+          <NomeUsuario>{usuarioNome + " " + usuarioSobrenome}</NomeUsuario>
         </ContainerUsuario>
         <ContainerLista>
           {dados.map((item) => (
-            <Card key={item.id} data={item} valor={userRa} />
+            <Card key={item.id} data={item} valor={usuarioRa} />
           ))}
         </ContainerLista>
       </ScrollView>
