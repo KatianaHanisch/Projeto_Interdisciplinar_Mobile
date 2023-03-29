@@ -6,9 +6,6 @@ import Calculadora from "../pages/Calculadora";
 import QRCodePage from "../pages/QRCodePage";
 import PerfilUsuario from "../pages/PerfilUsuario";
 
-import Feather from "@expo/vector-icons/Feather";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-
 import { Ionicons } from "@expo/vector-icons";
 
 const AppTab = createBottomTabNavigator();
@@ -27,7 +24,7 @@ export default function AppRoutes() {
           borderTopWidth: 0,
           elevation: 0,
           borderRadius: 4,
-          height: 48,
+          height: 44,
         },
       }}
     >
@@ -37,10 +34,9 @@ export default function AppRoutes() {
         options={{
           tabBarIcon: ({ color, focused }) => {
             if (focused) {
-              return <Ionicons name="home" size={27} color={color} />;
+              return <Ionicons name="home" size={26} color={color} />;
             }
-            // return <Feather name="home" color={color} size={size} />;
-            return <Ionicons name="home-outline" size={27} color={color} />;
+            return <Ionicons name="home-outline" size={26} color={color} />;
           },
         }}
       />
@@ -50,10 +46,10 @@ export default function AppRoutes() {
         options={{
           tabBarIcon: ({ color, focused }) => {
             if (focused) {
-              return <Ionicons name="calculator" size={27} color={color} />;
+              return <Ionicons name="calculator" size={26} color={color} />;
             }
             return (
-              <Ionicons name="calculator-outline" size={27} color={color} />
+              <Ionicons name="calculator-outline" size={26} color={color} />
             );
           },
         }}
@@ -64,9 +60,9 @@ export default function AppRoutes() {
         options={{
           tabBarIcon: ({ color, focused }) => {
             if (focused) {
-              return <Ionicons name="qr-code" size={27} color={color} />;
+              return <Ionicons name="qr-code" size={26} color={color} />;
             }
-            return <Ionicons name="qr-code-outline" size={27} color={color} />;
+            return <Ionicons name="qr-code-outline" size={26} color={color} />;
           },
         }}
       />
@@ -76,9 +72,9 @@ export default function AppRoutes() {
         options={{
           tabBarIcon: ({ color, focused }) => {
             if (focused) {
-              return <Ionicons name="person" size={27} color={color} />;
+              return <Ionicons name="person" size={26} color={color} />;
             }
-            return <Ionicons name="person-outline" size={27} color={color} />;
+            return <Ionicons name="person-outline" size={26} color={color} />;
           },
         }}
       />

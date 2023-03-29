@@ -32,9 +32,15 @@ export const ModalTitulo = styled.Text`
   font-size: 20px;
 `;
 export const ModalTexto = styled.Text`
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 25px;
   color: #495057;
+`;
+export const ModalInformacoes = styled.Text`
+  font-size: 15px;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 10px;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
   width: 38%;
@@ -43,7 +49,7 @@ export const ButtonPendencias = styled.TouchableOpacity`
   background-color: #253342;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;

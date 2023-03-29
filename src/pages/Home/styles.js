@@ -8,6 +8,11 @@ export const ContainerUsuario = styled.View`
   padding: 10px 20px;
 `;
 
+export const ContainerNovo = styled.SafeAreaView`
+  flex: 1;
+  background-color: #dee2e6;
+`;
+
 export const ContainerLista = styled.View`
   width: 100%;
   flex: 2;

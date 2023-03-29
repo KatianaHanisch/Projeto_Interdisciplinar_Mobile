@@ -9,6 +9,7 @@ import {
   ButtonTexto,
   ModalConteudo,
   ModalTexto,
+  ModalInformacoes,
 } from "./styles";
 
 export default function ModalDetalhes({ fechar, data, tipo }) {
@@ -22,10 +23,13 @@ export default function ModalDetalhes({ fechar, data, tipo }) {
       />
       <ContainerModal>
         <ModalConteudo>
-          <ModalTitulo>Detalhe das Pendências:</ModalTitulo>
+          <ModalTitulo>Detalhe da Pendência:</ModalTitulo>
           <ModalTexto>
             {tipo == "documentos" ? data.documentos : data.financeiro}
           </ModalTexto>
+          <ModalInformacoes>
+            Para revolver suas pendências, compareça a secretária acadêmica.
+          </ModalInformacoes>
           <ButtonPendencias onPress={fechar}>
             <ButtonTexto>Voltar</ButtonTexto>
           </ButtonPendencias>

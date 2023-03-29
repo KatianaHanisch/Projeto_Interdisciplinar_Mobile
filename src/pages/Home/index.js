@@ -15,6 +15,7 @@ import {
   TextoUsuario,
   NomeUsuario,
   ContainerLista,
+  ContainerNovo,
 } from "./styles";
 
 import { Container } from "../../styles";
@@ -66,7 +67,7 @@ export default function Home() {
     );
   } else {
     return (
-      <SafeAreaView>
+      <ContainerNovo>
         <ScrollView
           contentContainerStyle={styles.scrollView}
           refreshControl={
@@ -74,7 +75,7 @@ export default function Home() {
           }
         >
           <ContainerUsuario>
-            <TextoUsuario>Olá</TextoUsuario>
+            <TextoUsuario>Olá,</TextoUsuario>
             <NomeUsuario>{usuarioNome + " " + usuarioSobrenome}</NomeUsuario>
           </ContainerUsuario>
           <ContainerLista>
@@ -84,7 +85,7 @@ export default function Home() {
           </ContainerLista>
         </ScrollView>
         <StatusBar backgroundColor="#2a6041" barStyle="light-content" />
-      </SafeAreaView>
+      </ContainerNovo>
     );
   }
 }

@@ -49,7 +49,7 @@ export const Input = styled.TextInput`
 `;
 
 export const ContainerErro = styled.View`
-  background-color: #ff0000;
+  background-color: #e63946;
   height: 40px;
   align-items: center;
   justify-content: center;
@@ -81,6 +81,7 @@ export const ContainerMedia = styled.View`
   width: 100%;
   background-color: #dee2e6;
   align-items: center;
+  margin-top: -5px;
 `;
 export const TextoMedia = styled.Text`
   margin-top: 20px;
@@ -93,13 +94,13 @@ export const Media = styled.View`
   border-radius: 10px;
   margin-bottom: -10px;
   padding: 10px;
+  height: 170px;
   width: 100%;
-  height: 100%;
   align-items: center;
 `;
 
 export const IconContainer = styled.View`
-  background-color: #c6c6c6;
+  background-color: #dee2e6;
   padding: 5px;
   border-radius: 50px;
   margin-bottom: -20px;
@@ -108,16 +109,16 @@ export const IconContainer = styled.View`
 
 export const IconBorder = styled.View`
   background-color: #ffffff;
-  padding: 5px;
+  padding: 7px;
   border-radius: 50px;
 `;
 
 export const NovoContainer = styled.View`
-  background-color: #cacaca;
+  /* background-color: #cacaca; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 100%;
-  width: 90%;
+  width: 95%;
   align-items: center;
   padding: 0 8px;
 `;

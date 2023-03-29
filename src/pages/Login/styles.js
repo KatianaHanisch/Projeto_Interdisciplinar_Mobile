@@ -29,7 +29,7 @@ export const Input = styled.TextInput`
 export const ContainerAlert = styled.View`
   width: 90%;
   height: 45px;
-  background-color: red;
+  background-color: #e63946;
   border-radius: 8px;
   margin-top: -5px;
   align-items: center;
