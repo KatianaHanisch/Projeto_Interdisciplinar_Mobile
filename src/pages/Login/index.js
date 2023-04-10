@@ -1,11 +1,13 @@
 import React, { useState, useContext, useEffect } from "react";
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, Keyboard } from "react-native";
 
 import { AuthContext } from "../../context/auth";
 
 import {
-  Background,
   Container,
+  ContainerHeader,
+  Image,
+  ContainerItens,
   Logo,
   AreaInput,
   Input,
@@ -25,6 +27,8 @@ export default function SignIn() {
   const [open, setOpen] = React.useState(false);
 
   function handleLogin() {
+    Keyboard.dismiss();
+
     if (ra === "" || password === "") return;
 
     signIn(ra, password);
@@ -46,8 +50,11 @@ export default function SignIn() {
   }, [erroLogin]);
 
   return (
-    <Background>
-      <Container>
+    <Container>
+      <ContainerHeader>
+        <Image source={require("../../../assets/imagem.jpg")} />
+      </ContainerHeader>
+      <ContainerItens>
         <Logo source={require("../../../assets/Logo.png")} />
         <AreaInput>
           <Input
@@ -68,7 +75,7 @@ export default function SignIn() {
         </AreaInput>
         {open && (
           <ContainerAlert>
-            <Ionicons name="alert-circle-outline" size={28} color={"#ffffff"} />
+            <Ionicons name="alert-circle-outline" size={26} color={"#ffffff"} />
             <TextoAlerta>{erroLogin}</TextoAlerta>
           </ContainerAlert>
         )}
@@ -80,7 +87,7 @@ export default function SignIn() {
             <SubmitText>Acessar</SubmitText>
           )}
         </SubmitButton>
-      </Container>
-    </Background>
+      </ContainerItens>
+    </Container>
   );
 }

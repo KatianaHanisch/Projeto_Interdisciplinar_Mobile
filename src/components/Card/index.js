@@ -13,6 +13,7 @@ import {
   ContainerItensPendencias,
   ButtonTexto,
   ButtonPendencias,
+  Image,
 } from "./styles";
 
 import ModalDetalhes from "../../components/ModalDetalhes";
@@ -44,7 +45,8 @@ export default function Dados({ data, valor }) {
             <ContainerIcon>
               <BorderIcon>
                 <Icon>
-                  <Ionicons name="cash-outline" size={40} color={"#666666"} />
+                  <Image source={require("../../../assets/dollar.png")} />
+                  {/* <Ionicons name="cash-outline" size={40} color={"#666666"} /> */}
                 </Icon>
               </BorderIcon>
               <CardTitulo>**Pendência Financeira</CardTitulo>
@@ -68,11 +70,7 @@ export default function Dados({ data, valor }) {
             <ContainerIcon>
               <BorderIcon>
                 <Icon>
-                  <Ionicons
-                    name="documents-outline"
-                    size={35}
-                    color={"#666666"}
-                  />
+                  <Image source={require("../../../assets/paper.png")} />
                 </Icon>
               </BorderIcon>
               <CardTitulo>**Pendência Documentos</CardTitulo>

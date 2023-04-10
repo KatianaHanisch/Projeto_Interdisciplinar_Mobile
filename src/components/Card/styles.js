@@ -37,6 +37,10 @@ export const Icon = styled.View`
   border: 2px solid #45444e;
 `;
 
+export const Image = styled.Image`
+  width: 50px;
+  height: 50px;
+`;
 export const BorderIcon = styled.View`
   border-radius: 50px;
   border: 2px solid #ffff;

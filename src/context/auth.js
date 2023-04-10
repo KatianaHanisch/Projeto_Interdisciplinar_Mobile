@@ -25,6 +25,7 @@ function AuthProvider({ children }) {
       await AsyncStorage.setItem("@ra", JSON.stringify(user.ra));
       await AsyncStorage.setItem("@nome", JSON.stringify(user.nome));
       await AsyncStorage.setItem("@sobrenome", JSON.stringify(user.sobrenome));
+      await AsyncStorage.setItem("@curso", JSON.stringify(user.curso));
 
       setUser({
         user,

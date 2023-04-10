@@ -29,7 +29,7 @@ export default function Home() {
   const [usuarioNome, setUsuarioNome] = useState("");
   const [usuarioSobrenome, setUsuarioSobrenome] = useState("");
   const [atualizar, setAtualizar] = React.useState(false);
-  const [carregendoAplicacao, setCarregandoAplicacao] = useState(true);
+  const [carregandoAplicacao, setCarregandoAplicacao] = useState(true);
 
   async function getRa() {
     const raUsuario = await AsyncStorage.getItem("@ra");
@@ -59,7 +59,8 @@ export default function Home() {
     getDados();
     getRa();
   }, []);
-  if (carregendoAplicacao) {
+
+  if (carregandoAplicacao) {
     return (
       <Container>
         <ActivityIndicator color={"#2a6041"} size={55} />

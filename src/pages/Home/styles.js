@@ -11,6 +11,7 @@ export const ContainerUsuario = styled.View`
 export const ContainerNovo = styled.SafeAreaView`
   flex: 1;
   background-color: #dee2e6;
+  padding-top: 20px;
 `;
 
 export const ContainerLista = styled.View`
