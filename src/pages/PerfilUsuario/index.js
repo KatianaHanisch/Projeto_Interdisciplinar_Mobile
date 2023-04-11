@@ -13,7 +13,7 @@ import {
   TextoUsuarios,
   Texto,
   ImageUser,
-  ContainerIcon,
+  Icon,
   BorderIcon,
   ContainerItem,
   Image,
@@ -24,6 +24,9 @@ import {
   TextoFooter,
   ImageFooter,
   Linha,
+  ContainerCard,
+  ContainerHeader,
+  ContainerIcon,
 } from "./styles";
 
 export default function PerfilUsuario() {
@@ -52,47 +55,38 @@ export default function PerfilUsuario() {
 
   return (
     <Container>
-      <LinearGradient
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        colors={["#04bf00", "#3bb78f", "#0bab64", "#04bf00"]}
-        style={styles.containerGradiente}
-      >
-        <BorderIcon>
-          <ContainerIcon>
-            <ImageUser source={require("../../../assets/user.png")} />
-          </ContainerIcon>
-        </BorderIcon>
-        <TextoUsuarios>{nomeUsuario + " " + sobrenomeUsuario}</TextoUsuarios>
-      </LinearGradient>
-      <ContainerItem>
-        <Texto>Nome</Texto>
-        <TextoUsuarios>{nomeUsuario + " " + sobrenomeUsuario}</TextoUsuarios>
-      </ContainerItem>
-      <Linha />
-      <ContainerItem>
-        <Texto>Curso</Texto>
-        <TextoUsuarios>{cursoUsuario}</TextoUsuarios>
-      </ContainerItem>
-      <Linha />
-      <ContainerItem>
-        <Texto>RA</Texto>
-        <TextoUsuarios>{raUsuario}</TextoUsuarios>
-      </ContainerItem>
-      <Linha />
-      <ContainerItem>
-        <SubmitButton onPress={() => signOut()}>
-          <ContainerTeste>
-            <Image source={require("../../../assets/logout.png")} />
-            <SubmitText>Sair</SubmitText>
-          </ContainerTeste>
-          <Ionicons
-            name="chevron-forward-outline"
-            size={30}
-            color={"#666666"}
-          />
-        </SubmitButton>
-      </ContainerItem>
+      <ContainerHeader></ContainerHeader>
+      <ContainerCard>
+        <ContainerIcon>
+          <BorderIcon>
+            <Icon>
+              <ImageUser source={require("../../../assets/account.png")} />
+            </Icon>
+          </BorderIcon>
+        </ContainerIcon>
+        <ContainerItem>
+          <Texto>Nome</Texto>
+          <TextoUsuarios>{nomeUsuario + " " + sobrenomeUsuario}</TextoUsuarios>
+          <Linha />
+          <Texto>Curso</Texto>
+          <TextoUsuarios>{cursoUsuario}</TextoUsuarios>
+          <Linha />
+          <Texto>RA</Texto>
+          <TextoUsuarios>{raUsuario}</TextoUsuarios>
+          <Linha />
+          <SubmitButton onPress={() => signOut()}>
+            <ContainerTeste>
+              <Image source={require("../../../assets/logout.png")} />
+              <SubmitText>Sair</SubmitText>
+            </ContainerTeste>
+            <Ionicons
+              name="chevron-forward-outline"
+              size={30}
+              color={"#666666"}
+            />
+          </SubmitButton>
+        </ContainerItem>
+      </ContainerCard>
       <ContainerFooter>
         <ImageFooter source={require("../../../assets/ads1.png")} />
         <TextoFooter>

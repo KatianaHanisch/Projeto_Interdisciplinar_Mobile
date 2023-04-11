@@ -13,41 +13,68 @@ export const ImageUser = styled.Image`
   height: 50px;
 `;
 
-export const ContainerIcon = styled.View`
+export const Icon = styled.View`
   background-color: #fff;
+  padding: 2px;
   border-radius: 100px;
 `;
 export const BorderIcon = styled.View`
-  border: 1px solid #ff0000;
+  border: 3px solid #e5e5e5;
   border-radius: 100px;
+  margin-top: 50px;
 `;
 
 export const ContainerItem = styled.View`
   width: 100%;
-  padding: 10px;
-  background-color: #f6f6f6;
+  padding: 0 15px;
+  margin-top: 20px;
 `;
-
+export const ContainerCard = styled.View`
+  height: 58%;
+  width: 93%;
+  margin-top: -90px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+`;
+export const ContainerIcon = styled.View`
+  height: 80px;
+  width: 100%;
+  background-color: #e5e5e5;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+`;
 export const Image = styled.Image`
   height: 20px;
   width: 20px;
 `;
 
 export const Texto = styled.Text`
-  color: #000000;
+  color: #525252;
   font-size: 12px;
+  padding-top: 10px;
 `;
 
 export const TextoUsuarios = styled.Text`
-  font-size: 20px;
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: #2a2829;
 `;
 
 export const ContainerTeste = styled.View`
   flex-direction: row;
   align-items: center;
 `;
+export const ContainerHeader = styled.View`
+  height: 180px;
+  width: 100%;
+  background-color: #2a6041;
+`;
 
 export const SubmitButton = styled.TouchableOpacity`
+  margin: 10px 0;
   width: 100%;
   height: 45px;
   border-radius: 8px;
@@ -79,5 +106,5 @@ export const TextoFooter = styled.Text`
 export const Linha = styled.View`
   width: 100%;
   height: 1px;
-  color: #484848;
+  background-color: #ddd;
 `;
