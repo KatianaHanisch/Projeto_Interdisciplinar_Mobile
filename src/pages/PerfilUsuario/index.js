@@ -60,7 +60,7 @@ export default function PerfilUsuario() {
         <ContainerIcon>
           <BorderIcon>
             <Icon>
-              <ImageUser source={require("../../../assets/account.png")} />
+              <ImageUser source={require("../../../assets/user.png")} />
             </Icon>
           </BorderIcon>
         </ContainerIcon>
@@ -82,7 +82,7 @@ export default function PerfilUsuario() {
             <Ionicons
               name="chevron-forward-outline"
               size={30}
-              color={"#525252"}
+              color={"#393d3f"}
             />
           </SubmitButton>
         </ContainerItem>

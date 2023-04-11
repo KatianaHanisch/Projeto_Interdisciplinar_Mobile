@@ -52,7 +52,7 @@ export const Image = styled.Image`
 `;
 
 export const Texto = styled.Text`
-  color: #525252;
+  color: #7f7f7f;
   font-size: 12px;
   padding-top: 10px;
 `;
@@ -60,7 +60,7 @@ export const Texto = styled.Text`
 export const TextoUsuarios = styled.Text`
   font-size: 18px;
   padding-bottom: 10px;
-  color: #2a2829;
+  color: #393d3f;
 `;
 
 export const ContainerTeste = styled.View`
@@ -83,8 +83,8 @@ export const SubmitButton = styled.TouchableOpacity`
   justify-content: space-between;
 `;
 export const SubmitText = styled.Text`
-  font-size: 20px;
-  color: #2a2829;
+  font-size: 18px;
+  color: #393d3f;
   margin-left: 10px;
 `;
 export const ContainerFooter = styled.View`
