@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, Image } from "react-native";
 import QRCode from "react-native-qrcode-svg";
 import * as Progress from 'react-native-progress';
 
@@ -75,10 +75,12 @@ export default function QRCodePage() {
       </ContainerQRCodeHead>
       <ContainerQRCode>
         <BackgroundQrCode>
-          {qrValue == "" ? (
+          {qrValue === "" ? (
             <ActivityIndicator size={100} color="green" />
+          ) : qrValue === "NA" ? (
+            <Image source={require('../../../assets/qrcode.png')} style={{ width: 220, height: 220, borderColor: 'red' }} />
           ) : (
-            <QRCode size={220} value={qrValue ? qrValue : "NA"} />
+            <QRCode size={220} value={qrValue} />
           )}
         </BackgroundQrCode>
       </ContainerQRCode>

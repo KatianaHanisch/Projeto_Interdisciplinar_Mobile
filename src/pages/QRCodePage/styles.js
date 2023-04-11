@@ -60,3 +60,4 @@ export const ButtonTexto = styled.Text`
   font-size: 18px;
   color: #fff;
 `;
+
