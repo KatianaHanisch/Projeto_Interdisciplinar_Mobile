@@ -107,14 +107,18 @@ export const IconContainer = styled.View`
   z-index: 9;
 `;
 
+export const Image = styled.Image`
+  width: 40px;
+  height: 40px;
+`;
+
 export const IconBorder = styled.View`
   background-color: #ffffff;
-  padding: 7px;
+  padding: 10px;
   border-radius: 50px;
 `;
 
 export const NovoContainer = styled.View`
-  /* background-color: #cacaca; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 100%;

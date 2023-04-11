@@ -19,6 +19,7 @@ import {
   IconContainer,
   IconBorder,
   NovoContainer,
+  Image,
 } from "./styles";
 
 import { Ionicons } from "@expo/vector-icons";
@@ -58,17 +59,17 @@ export default function Calculadora() {
     setNotaN3("");
 
     if (media >= 7 && media <= 10) {
-      setMensagem("Média: " + media.toFixed(1) + "\nSituação: Aprovado");
+      setMensagem("Sua média foi " + media.toFixed(1) + "\nVocê foi aprovado");
     } else if (media >= 4 && media < 7) {
       setMensagem(
-        "Média: " +
+        "Sua média foi " +
           media.toFixed(1) +
-          "\nSituação: Fazer Exame\nVocê precisa tirar " +
+          "\nVocê ficou de exame\nVocê precisa tirar " +
           (10 - media).toFixed(1) +
           " no exame"
       );
     } else if (media < 4) {
-      setMensagem("Média: " + media.toFixed(1) + "\nSituação: Reprovado");
+      setMensagem("Sua média foi " + media.toFixed(1) + "\nVocê foi reprovado");
     } else {
       setMensagem("Nota inválida");
     }
@@ -124,7 +125,8 @@ export default function Calculadora() {
           <NovoContainer>
             <IconContainer>
               <IconBorder>
-                <Ionicons name="reader-outline" size={28} color={"#000000"} />
+                {/* <Ionicons name="reader-outline" size={28} color={"#000000"} /> */}
+                <Image source={require("../../../assets/note.png")} />
               </IconBorder>
             </IconContainer>
             <Media>
