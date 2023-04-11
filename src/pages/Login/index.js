@@ -52,7 +52,7 @@ export default function SignIn() {
   return (
     <Container>
       <ContainerHeader>
-        <Image source={require("../../../assets/imagem.jpg")} />
+        <Image source={require("../../../assets/teste4.jpg")} />
       </ContainerHeader>
       <ContainerItens>
         <Logo source={require("../../../assets/Logo.png")} />

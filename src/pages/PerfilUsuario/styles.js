@@ -19,7 +19,7 @@ export const Icon = styled.View`
   border-radius: 100px;
 `;
 export const BorderIcon = styled.View`
-  border: 3px solid #e5e5e5;
+  border: 2px solid #45444e;
   border-radius: 100px;
   margin-top: 50px;
 `;
@@ -35,16 +35,16 @@ export const ContainerCard = styled.View`
   margin-top: -90px;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #fcfffc;
   border-radius: 20px;
 `;
 export const ContainerIcon = styled.View`
   height: 80px;
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: #45444e;
   align-items: center;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 `;
 export const Image = styled.Image`
   height: 20px;

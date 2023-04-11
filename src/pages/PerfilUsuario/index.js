@@ -82,7 +82,7 @@ export default function PerfilUsuario() {
             <Ionicons
               name="chevron-forward-outline"
               size={30}
-              color={"#666666"}
+              color={"#525252"}
             />
           </SubmitButton>
         </ContainerItem>
