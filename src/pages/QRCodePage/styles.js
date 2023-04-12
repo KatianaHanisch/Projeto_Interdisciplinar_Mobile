@@ -15,7 +15,7 @@ export const ContainerQRCodeHead = styled.View`
   align-items: center;
 `;
 export const TextoTitulo = styled.Text`
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 25px;
   color: #ffffff;
 `;
@@ -31,11 +31,23 @@ export const ContainerQRCode = styled.View`
   padding: 15px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding-top: 60px;
+  padding-top: 80px;
   min-height: 295px;
   display: flex;
   justify-content: center;
 `;
+
+export const BackgroundQrCodeRed = styled.View`
+  border: 3px solid red;
+  background-color: #ffffff;
+  padding: 25px;
+  width: 85%;
+  align-items: center;
+  border-radius: 10px;
+  min-height: 295px;
+  display: flex;
+  justify-content: center;
+`
 
 export const BackgroundQrCode = styled.View`
   background-color: #ffffff;
@@ -46,6 +58,7 @@ export const BackgroundQrCode = styled.View`
   min-height: 295px;
   display: flex;
   justify-content: center;
+  border: 3px solid green;
 `;
 export const Button = styled.TouchableOpacity`
   width: 55%;
