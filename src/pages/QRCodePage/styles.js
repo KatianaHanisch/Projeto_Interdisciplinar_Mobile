@@ -9,13 +9,13 @@ export const Container = styled.View`
 export const ContainerQRCodeHead = styled.View`
   background-color: #2a6041;
   width: 100%;
-  height: 125px;
+  height: 20%;
   justify-content: flex-start;
   margin-bottom: -30px;
   align-items: center;
 `;
 export const TextoTitulo = styled.Text`
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 25px;
   color: #ffffff;
 `;
@@ -60,4 +60,3 @@ export const ButtonTexto = styled.Text`
   font-size: 18px;
   color: #fff;
 `;
-

@@ -122,16 +122,12 @@ export default function Calculadora() {
       </ContainerInputs>
       {mensagem ? (
         <ContainerMedia>
-          <NovoContainer>
-            <IconContainer>
-              <IconBorder>
-                <Image source={require("../../../assets/note.png")} />
-              </IconBorder>
-            </IconContainer>
-            <Media>
-              <TextoMedia>{mensagem}</TextoMedia>
-            </Media>
-          </NovoContainer>
+          <IconContainer>
+            <IconBorder>
+              <Image source={require("../../../assets/note.png")} />
+            </IconBorder>
+          </IconContainer>
+          <TextoMedia>{mensagem}</TextoMedia>
         </ContainerMedia>
       ) : (
         <ContainerMedia></ContainerMedia>

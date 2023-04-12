@@ -18,8 +18,6 @@ import {
 
 import ModalDetalhes from "../../components/ModalDetalhes";
 
-import { Ionicons } from "@expo/vector-icons";
-
 export default function Dados({ data, valor }) {
   const [modalVisivel, setModalVisivel] = useState(false);
   const [tipoModal, setTipoModal] = useState("");
@@ -46,7 +44,6 @@ export default function Dados({ data, valor }) {
               <BorderIcon>
                 <Icon>
                   <Image source={require("../../../assets/dollar.png")} />
-                  {/* <Ionicons name="cash-outline" size={40} color={"#666666"} /> */}
                 </Icon>
               </BorderIcon>
               <CardTitulo>**Pendência Financeira</CardTitulo>

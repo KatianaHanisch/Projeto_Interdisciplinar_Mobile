@@ -4,18 +4,19 @@ export const Container = styled.View`
   flex: 1;
   justify-content: flex-start;
   align-items: center;
+  background-color: #dee2e6;
 `;
 
 export const ContainerCalculadoraHead = styled.View`
   background-color: #2a6041;
   width: 100%;
-  height: 120px;
+  height: 20%;
   justify-content: flex-start;
-  margin-bottom: -25px;
+  margin-bottom: -30px;
   align-items: center;
 `;
 export const Texto = styled.Text`
-  margin-top: 40px;
+  margin-top: 45px;
   font-size: 25px;
   color: #fff;
 `;
@@ -77,11 +78,12 @@ export const ButtonTexto = styled.Text`
   color: #fff;
 `;
 export const ContainerMedia = styled.View`
-  height: 100%;
-  width: 100%;
-  background-color: #dee2e6;
+  height: 30%;
+  width: 90%;
+  background-color: #ffffff;
   align-items: center;
   margin-top: -5px;
+  border-radius: 8px;
 `;
 export const TextoMedia = styled.Text`
   margin-top: 20px;
@@ -89,15 +91,15 @@ export const TextoMedia = styled.Text`
   color: #373b44;
 `;
 
-export const Media = styled.View`
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin-bottom: -10px;
-  padding: 10px;
-  height: 170px;
-  width: 100%;
-  align-items: center;
-`;
+// export const Media = styled.View`
+//   background-color: #ffffff;
+//   border-radius: 10px;
+//   margin-bottom: -10px;
+//   padding: 10px;
+//   height: 25%;
+//   width: 90%;
+//   align-items: center;
+// `;
 
 export const IconContainer = styled.View`
   background-color: #dee2e6;
@@ -118,11 +120,11 @@ export const IconBorder = styled.View`
   border-radius: 50px;
 `;
 
-export const NovoContainer = styled.View`
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 100%;
-  width: 95%;
-  align-items: center;
-  padding: 0 8px;
-`;
+// export const NovoContainer = styled.View`
+//   border-top-left-radius: 20px;
+//   border-top-right-radius: 20px;
+//   height: 100%;
+//   width: 95%;
+//   align-items: center;
+//   padding: 0 8px;
+// `;

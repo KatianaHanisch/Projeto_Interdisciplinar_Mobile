@@ -1,11 +1,12 @@
 import styled from "styled-components/native";
 
 export const ContainerUsuario = styled.View`
-  height: 135px;
+  height: 20%;
+  /* height: 135px; */
   width: 100%;
   background-color: #2a6041;
   margin-bottom: -40px;
-  padding: 10px 20px;
+  padding: 15px 20px;
 `;
 
 export const ContainerNovo = styled.SafeAreaView`
