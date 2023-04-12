@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ActivityIndicator, Image } from "react-native";
 import QRCode from "react-native-qrcode-svg";
@@ -7,12 +7,12 @@ import * as Progress from 'react-native-progress';
 import {
   ContainerQRCodeHead,
   Container,
-  Texto,
   Button,
   ButtonTexto,
   ContainerQRCode,
   BackgroundQrCode,
   TextoTitulo,
+  BackgroundQrCodeRed
 } from "./styles";
 
 export default function QRCodePage() {
@@ -74,15 +74,28 @@ export default function QRCodePage() {
         <TextoTitulo>QR-Code</TextoTitulo>
       </ContainerQRCodeHead>
       <ContainerQRCode>
-        <BackgroundQrCode>
-          {qrValue === "" ? (
-            <ActivityIndicator size={100} color="green" />
-          ) : qrValue === "NA" ? (
-            <Image source={require('../../../assets/qrcode.png')} style={{ width: 220, height: 220, borderColor: 'red' }} />
-          ) : (
-            <QRCode size={220} value={qrValue} />
-          )}
-        </BackgroundQrCode>
+        {qrValue === "NA" ?
+          <BackgroundQrCodeRed>
+            {qrValue === "" ? (
+              <ActivityIndicator size={100} color="green" />
+            ) : qrValue === "NA" ? (
+              <Image source={require('../../../assets/qrcode.png')} style={{ width: 220, height: 220, borderColor: 'red' }} />
+            ) : (
+              <QRCode size={220} value={qrValue} />
+            )}
+          </BackgroundQrCodeRed>
+          :
+          <BackgroundQrCode>
+            {qrValue === "" ? (
+              <ActivityIndicator size={100} color="green" />
+            ) : qrValue === "NA" ? (
+              <Image source={require('../../../assets/qrcode.png')} style={{ width: 220, height: 220, borderColor: 'red' }} />
+            ) : (
+              <QRCode size={220} value={qrValue} />
+            )}
+          </BackgroundQrCode>
+
+        }
       </ContainerQRCode>
 
       {timeLeft > 0 ? (
@@ -97,6 +110,16 @@ export default function QRCodePage() {
           <ButtonTexto>Gerar QR-Code</ButtonTexto>
         </Button>
       )}
+
+      <Image source={require('../../../assets/dog.webp')}
+        style={{
+          width: 80,
+          height: 80,
+          position: 'absolute',
+          marginTop: 650
+        }}
+      ></Image>
+
     </Container>
   );
 }
