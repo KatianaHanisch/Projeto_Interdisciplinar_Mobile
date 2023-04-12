@@ -6,11 +6,12 @@ export const Container = styled.View`
   background-color: #dee2e6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding-top: 15px;
+  padding-top: 5px;
 `;
 export const ContainerCard = styled.View`
   width: 90%;
-  height: 220px;
+  height: 42%;
+  /* height: 220px; */
   margin: 15px;
   align-items: center;
   border-radius: 5px;
@@ -20,7 +21,8 @@ export const ContainerCard = styled.View`
 
 export const ContainerIcon = styled.View`
   width: 100%;
-  height: 130px;
+  /* height: 130px; */
+  height: 58%;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
