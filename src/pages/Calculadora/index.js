@@ -120,7 +120,7 @@ export default function Calculadora() {
           </Button>
         </Inputs>
       </ContainerInputs>
-      {mensagem ? (
+      {mensagem && (
         <ContainerMedia>
           <IconContainer>
             <IconBorder>
@@ -129,8 +129,6 @@ export default function Calculadora() {
           </IconContainer>
           <TextoMedia>{mensagem}</TextoMedia>
         </ContainerMedia>
-      ) : (
-        <ContainerMedia></ContainerMedia>
       )}
     </Container>
   );

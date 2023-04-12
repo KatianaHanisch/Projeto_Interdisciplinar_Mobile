@@ -19,15 +19,15 @@ export const Icon = styled.View`
   border-radius: 100px;
 `;
 export const BorderIcon = styled.View`
-  border: 2px solid #45444e;
+  border: 1px solid #45444e;
   border-radius: 100px;
-  margin-top: 50px;
+  margin-top: 30px;
 `;
 
 export const ContainerItem = styled.View`
   width: 100%;
   padding: 0 15px;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
 export const ContainerCard = styled.View`
   height: 58%;
@@ -41,7 +41,7 @@ export const ContainerCard = styled.View`
 export const ContainerIcon = styled.View`
   height: 90px;
   width: 100%;
-  background-color: #45444e;
+  /* background-color: #45444e; */
   align-items: center;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;

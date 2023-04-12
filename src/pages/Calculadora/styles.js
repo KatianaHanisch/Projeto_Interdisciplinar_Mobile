@@ -78,12 +78,12 @@ export const ButtonTexto = styled.Text`
   color: #fff;
 `;
 export const ContainerMedia = styled.View`
-  height: 30%;
+  height: 28%;
   width: 90%;
   background-color: #ffffff;
   align-items: center;
-  margin-top: -5px;
-  border-radius: 8px;
+  border-radius: 20px;
+  margin-top: 20px;
 `;
 export const TextoMedia = styled.Text`
   margin-top: 20px;
@@ -91,22 +91,11 @@ export const TextoMedia = styled.Text`
   color: #373b44;
 `;
 
-// export const Media = styled.View`
-//   background-color: #ffffff;
-//   border-radius: 10px;
-//   margin-bottom: -10px;
-//   padding: 10px;
-//   height: 25%;
-//   width: 90%;
-//   align-items: center;
-// `;
-
 export const IconContainer = styled.View`
   background-color: #dee2e6;
   padding: 5px;
   border-radius: 50px;
-  margin-bottom: -20px;
-  z-index: 9;
+  margin-top: -30px;
 `;
 
 export const Image = styled.Image`

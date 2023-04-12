@@ -57,13 +57,13 @@ export default function PerfilUsuario() {
     <Container>
       <ContainerHeader></ContainerHeader>
       <ContainerCard>
-        <ContainerIcon>
-          <BorderIcon>
-            <Icon>
-              <ImageUser source={require("../../../assets/user.png")} />
-            </Icon>
-          </BorderIcon>
-        </ContainerIcon>
+        {/* <ContainerIcon> */}
+        <BorderIcon>
+          <Icon>
+            <ImageUser source={require("../../../assets/user.png")} />
+          </Icon>
+        </BorderIcon>
+        {/* </ContainerIcon> */}
         <ContainerItem>
           <Texto>Nome</Texto>
           <TextoUsuarios>{nomeUsuario + " " + sobrenomeUsuario}</TextoUsuarios>
