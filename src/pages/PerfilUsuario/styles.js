@@ -39,7 +39,7 @@ export const ContainerCard = styled.View`
   border-radius: 20px;
 `;
 export const ContainerIcon = styled.View`
-  height: 80px;
+  height: 90px;
   width: 100%;
   background-color: #45444e;
   align-items: center;

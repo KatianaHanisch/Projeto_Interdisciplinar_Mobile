@@ -15,7 +15,7 @@ export const ContainerCalculadoraHead = styled.View`
   align-items: center;
 `;
 export const Texto = styled.Text`
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 25px;
   color: #fff;
 `;
@@ -49,7 +49,7 @@ export const Input = styled.TextInput`
 `;
 
 export const ContainerErro = styled.View`
-  background-color: #e63946;
+  background-color: #9e2a2b;
   height: 40px;
   align-items: center;
   justify-content: center;

@@ -125,7 +125,6 @@ export default function Calculadora() {
           <NovoContainer>
             <IconContainer>
               <IconBorder>
-                {/* <Ionicons name="reader-outline" size={28} color={"#000000"} /> */}
                 <Image source={require("../../../assets/note.png")} />
               </IconBorder>
             </IconContainer>
