@@ -15,7 +15,7 @@ export const ContainerQRCodeHead = styled.View`
   align-items: center;
 `;
 export const TextoTitulo = styled.Text`
-   margin-top: 45px;
+  margin-top: 45px;
   font-size: 25px;
   color: #fff;
 `;
@@ -47,7 +47,7 @@ export const BackgroundQrCodeRed = styled.View`
   min-height: 295px;
   display: flex;
   justify-content: center;
-`
+`;
 
 export const BackgroundQrCode = styled.View`
   background-color: #ffffff;
@@ -56,7 +56,6 @@ export const BackgroundQrCode = styled.View`
   align-items: center;
   border-radius: 10px;
   min-height: 295px;
-  display: flex;
   justify-content: center;
   border: 3px solid green;
 `;
