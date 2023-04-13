@@ -15,9 +15,9 @@ export const ContainerQRCodeHead = styled.View`
   align-items: center;
 `;
 export const TextoTitulo = styled.Text`
-  margin-top: 40px;
+   margin-top: 45px;
   font-size: 25px;
-  color: #ffffff;
+  color: #fff;
 `;
 export const Texto = styled.Text`
   margin-top: 20px;
