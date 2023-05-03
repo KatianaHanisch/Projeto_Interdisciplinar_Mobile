@@ -6,6 +6,7 @@ import { AuthContext } from "../../context/auth";
 import {
   Container,
   ContainerHeader,
+  ContainerImage,
   Image,
   ContainerItens,
   Logo,
@@ -52,7 +53,9 @@ export default function SignIn() {
   return (
     <Container>
       <ContainerHeader>
-        <Image source={require("../../../assets/teste4.jpg")} />
+        <ContainerImage>
+          <Image source={require("../../../assets/unifasipeLogo.png")} />
+        </ContainerImage>
       </ContainerHeader>
       <ContainerItens>
         <Logo source={require("../../../assets/Logo.png")} />

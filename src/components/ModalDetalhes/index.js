@@ -3,13 +3,14 @@ import { StatusBar, StyleSheet } from "react-native";
 
 import {
   Container,
-  ModalTitulo,
+  BorderTopModal,
   ContainerModal,
   ButtonPendencias,
   ButtonTexto,
   ModalConteudo,
   ModalTexto,
   ModalInformacoes,
+  BorderInformacoes,
 } from "./styles";
 
 export default function ModalDetalhes({ fechar, data, tipo }) {
@@ -23,10 +24,11 @@ export default function ModalDetalhes({ fechar, data, tipo }) {
       />
       <ContainerModal>
         <ModalConteudo>
-          <ModalTitulo>Detalhe da Pendência:</ModalTitulo>
+          <BorderTopModal />
           <ModalTexto>
             {tipo == "documentos" ? data.documentos : data.financeiro}
           </ModalTexto>
+          <BorderInformacoes />
           <ModalInformacoes>
             Para revolver suas pendências, compareça a secretária acadêmica.
           </ModalInformacoes>

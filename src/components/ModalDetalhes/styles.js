@@ -5,51 +5,60 @@ export const Container = styled.View`
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.68);
 `;
 
 export const ContainerModal = styled.View`
-  height: 40%;
+  height: 50%;
   width: 100%;
-  background-color: #2a2829;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
   align-items: center;
   justify-content: center;
 `;
 
 export const ModalConteudo = styled.View`
-  background-color: #ffff;
+  background-color: #eae6e5;
+  opacity: 0.95;
   width: 100%;
   height: 100%;
   margin-top: 10px;
-  border-radius: 10px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
   align-items: center;
   padding-top: 10px;
 `;
-export const ModalTitulo = styled.Text`
-  color: #6c757d;
-  font-size: 20px;
+export const BorderTopModal = styled.View`
+  background-color: #a5a5a5;
+  width: 20%;
+  height: 4px;
+  border-radius: 20px;
 `;
 export const ModalTexto = styled.Text`
-  margin-top: 15px;
+  margin-top: 60px;
+  margin-bottom: 100px;
   font-size: 25px;
   color: #495057;
+  font-weight: 600;
+`;
+export const BorderInformacoes = styled.View`
+  width: 95%;
+  height: 1px;
+  background-color: #7f7f7f;
+  margin-bottom: 5px;
 `;
 export const ModalInformacoes = styled.Text`
-  font-size: 15px;
-  color: #6c757d;
+  font-size: 14px;
+  color: #736f72;
   text-align: center;
-  margin-top: 10px;
+  /* margin-top: 20px; */
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
-  width: 38%;
+  width: 58%;
   padding: 8px;
   border-radius: 5px;
   background-color: #253342;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 12px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;

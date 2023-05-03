@@ -8,12 +8,13 @@ export const Container = styled.KeyboardAvoidingView`
 export const ContainerHeader = styled.View`
   flex: 1.1;
   width: 100%;
-  background: #252525;
+  background: #eae6e5;
+  align-items: center;
 `;
 
 export const ContainerItens = styled.View`
   flex-direction: column;
-  flex: 3;
+  flex: 2;
   width: 100%;
   align-items: center;
   background: #f0f0f0;
@@ -22,10 +23,15 @@ export const ContainerItens = styled.View`
 `;
 
 export const Logo = styled.Image`
-  margin-bottom: 35px;
-  margin-top: 45px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   height: 90px;
   width: 110px;
+`;
+export const ContainerImage = styled.View`
+  height: 90px;
+  width: 340px;
+  margin-top: 50px;
 `;
 
 export const Image = styled.Image`

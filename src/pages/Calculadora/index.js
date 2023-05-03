@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Keyboard } from "react-native";
+import { Keyboard, Modal } from "react-native";
 
 import {
   ContainerCalculadoraHead,
@@ -22,23 +22,28 @@ import {
   Image,
 } from "./styles";
 
-import { Ionicons } from "@expo/vector-icons";
+import ModalCalculadora from "../../components/ModalCalculadora";
 
 export default function Calculadora() {
   const [notaN1, setNotaN1] = useState("");
   const [notaN2, setNotaN2] = useState("");
   const [notaN3, setNotaN3] = useState("");
+  const [media, setMedia] = useState(0);
   const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
+  const [modalVisivel, setModalVisivel] = useState(false);
+
+  function fecharModal() {
+    setModalVisivel(false);
+  }
 
   function calcularMedia() {
-    setMensagem("");
     if (notaN1 == "" || notaN2 == "" || notaN3 == "") return;
-
-    let media =
-      (parseFloat(notaN1) + parseFloat(notaN2) + parseFloat(notaN3)) / 3;
-
     Keyboard.dismiss();
+
+    setMedia(
+      (parseFloat(notaN1) + parseFloat(notaN2) + parseFloat(notaN3)) / 3
+    );
 
     if (
       notaN1 < 0 ||
@@ -54,25 +59,7 @@ export default function Calculadora() {
       setErro("");
     }
 
-    setNotaN1("");
-    setNotaN2("");
-    setNotaN3("");
-
-    if (media >= 7 && media <= 10) {
-      setMensagem("Sua média foi " + media.toFixed(1) + "\nVocê foi aprovado");
-    } else if (media >= 4 && media < 7) {
-      setMensagem(
-        "Sua média foi " +
-          media.toFixed(1) +
-          "\nVocê ficou de exame\nVocê precisa tirar " +
-          (10 - media).toFixed(1) +
-          " no exame"
-      );
-    } else if (media < 4) {
-      setMensagem("Sua média foi " + media.toFixed(1) + "\nVocê foi reprovado");
-    } else {
-      setMensagem("Nota inválida");
-    }
+    setModalVisivel(true);
   }
 
   return (
@@ -120,16 +107,9 @@ export default function Calculadora() {
           </Button>
         </Inputs>
       </ContainerInputs>
-      {mensagem && (
-        <ContainerMedia>
-          <IconContainer>
-            <IconBorder>
-              <Image source={require("../../../assets/note.png")} />
-            </IconBorder>
-          </IconContainer>
-          <TextoMedia>{mensagem}</TextoMedia>
-        </ContainerMedia>
-      )}
+      <Modal visible={modalVisivel} transparent={true} animationType="slide">
+        <ModalCalculadora fechar={fecharModal} data={media} />
+      </Modal>
     </Container>
   );
 }
