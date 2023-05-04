@@ -19,7 +19,7 @@ export const Icon = styled.View`
   border-radius: 100px;
 `;
 export const BorderIcon = styled.View`
-  border: 1px solid #45444e;
+  border: 2px solid #515151;
   border-radius: 100px;
   margin-top: 30px;
 `;
@@ -38,14 +38,6 @@ export const ContainerCard = styled.View`
   background-color: #fcfffc;
   border-radius: 20px;
 `;
-export const ContainerIcon = styled.View`
-  height: 90px;
-  width: 100%;
-  /* background-color: #45444e; */
-  align-items: center;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-`;
 export const Image = styled.Image`
   height: 20px;
   width: 20px;
@@ -60,7 +52,7 @@ export const Texto = styled.Text`
 export const TextoUsuarios = styled.Text`
   font-size: 18px;
   padding-bottom: 10px;
-  color: #393d3f;
+  color: #515151;
 `;
 
 export const ContainerTeste = styled.View`
@@ -84,7 +76,7 @@ export const SubmitButton = styled.TouchableOpacity`
 `;
 export const SubmitText = styled.Text`
   font-size: 18px;
-  color: #393d3f;
+  color: #515151;
   margin-left: 10px;
 `;
 export const ContainerFooter = styled.View`
@@ -98,7 +90,7 @@ export const ImageFooter = styled.Image`
   opacity: 0.8;
 `;
 export const TextoFooter = styled.Text`
-  color: #525252;
+  color: #736f72;
   font-size: 15px;
   text-align: center;
   margin: 5px 8px;

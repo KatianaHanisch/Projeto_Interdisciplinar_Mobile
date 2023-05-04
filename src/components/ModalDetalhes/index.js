@@ -18,9 +18,9 @@ export default function ModalDetalhes({ fechar, data, tipo }) {
     <Container>
       <StatusBar
         animated={true}
-        barStyle={"dark-content"}
+        barStyle={"light-content"}
         translucent={true}
-        backgroundColor=" rgba(0, 0, 0, 0.6)"
+        backgroundColor=" rgba(0, 0, 0, 0.9)"
       />
       <ContainerModal>
         <ModalConteudo>

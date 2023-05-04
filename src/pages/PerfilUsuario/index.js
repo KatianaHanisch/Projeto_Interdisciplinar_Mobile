@@ -26,7 +26,6 @@ import {
   Linha,
   ContainerCard,
   ContainerHeader,
-  ContainerIcon,
 } from "./styles";
 
 export default function PerfilUsuario() {
@@ -55,15 +54,13 @@ export default function PerfilUsuario() {
 
   return (
     <Container>
-      <ContainerHeader></ContainerHeader>
+      <ContainerHeader />
       <ContainerCard>
-        {/* <ContainerIcon> */}
         <BorderIcon>
           <Icon>
             <ImageUser source={require("../../../assets/user.png")} />
           </Icon>
         </BorderIcon>
-        {/* </ContainerIcon> */}
         <ContainerItem>
           <Texto>Nome</Texto>
           <TextoUsuarios>{nomeUsuario + " " + sobrenomeUsuario}</TextoUsuarios>
@@ -82,7 +79,7 @@ export default function PerfilUsuario() {
             <Ionicons
               name="chevron-forward-outline"
               size={30}
-              color={"#393d3f"}
+              color={"#736f72"}
             />
           </SubmitButton>
         </ContainerItem>

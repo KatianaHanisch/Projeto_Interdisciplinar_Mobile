@@ -8,14 +8,19 @@ import {
   ContainerImage,
   Image,
   Linha,
+  ContainerCardFooter,
+  ContainerTextos,
+  ContainerTeste,
   TextoTitulo,
   TextoSubtitulo,
+  TextoSecundario,
   Button,
   ButtonTexto,
 } from "./styles";
 
 export default function ModalCalculadora({ fechar, data }) {
   const [textoInicial, setTextoInicial] = useState("");
+  const [textoSecundario, setTextoSecundario] = useState("");
   const [image, setImage] = useState(null);
 
   const images = {
@@ -32,22 +37,27 @@ export default function ModalCalculadora({ fechar, data }) {
 
   function mensagem() {
     if (data >= 7) {
-      setTextoInicial("Parabéns você foi aprovado!!");
       setImage(images.primeiraImagem.uri);
+      setTextoInicial("Parabéns você foi aprovado!!");
+      setTextoSecundario(
+        "Parabéns você foi aprovado. O próximo semestre está lhe aguardando"
+      );
     } else if (data < 7 && data > 4) {
-      setTextoInicial("Você ficou de exame");
       setImage(images.segundaImagem.uri);
+      setTextoInicial("Você ficou de exame");
+      setTextoSecundario(
+        "Suas opções são solicitar a prova substuitiva ou fazer o exame final"
+      );
     } else {
-      setTextoInicial("Infelizmente você reprovou");
       setImage(images.terceiraImagem.uri);
+      setTextoInicial("Infelizmente você reprovou");
+      setTextoSecundario("Entre em contato com o coordenador do seu curso");
     }
   }
 
   useEffect(() => {
     mensagem();
   }, []);
-
-  // let textoInicial = "Parabéns você foi aprovado!!";
 
   return (
     <Container>
@@ -64,10 +74,20 @@ export default function ModalCalculadora({ fechar, data }) {
         </ContainerImage>
         <TextoTitulo>{textoInicial}</TextoTitulo>
         <Linha />
-        <TextoSubtitulo>Sua nota média foi {data.toFixed(1)}</TextoSubtitulo>
-        <Button onPress={fechar}>
-          <ButtonTexto>Fechar</ButtonTexto>
-        </Button>
+        <ContainerCardFooter>
+          <ContainerTextos>
+            <TextoSubtitulo>
+              Sua nota média foi {data.toFixed(1)}
+            </TextoSubtitulo>
+            <Linha />
+            <TextoSecundario>{textoSecundario}</TextoSecundario>
+          </ContainerTextos>
+          <ContainerTeste>
+            <Button onPress={fechar}>
+              <ButtonTexto>Fechar</ButtonTexto>
+            </Button>
+          </ContainerTeste>
+        </ContainerCardFooter>
       </ModalConteudo>
     </Container>
   );

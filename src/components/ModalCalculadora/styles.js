@@ -25,8 +25,8 @@ export const BorderTopModal = styled.View`
 export const ContainerImage = styled.View`
   width: 300px;
   height: 170px;
-  background-color: #ffff;
-  padding: 10px;
+  /* background-color: #f8f9fa; */
+  /* padding: 10px; */
   margin: 20px 0;
   border-radius: 20px;
 `;
@@ -40,6 +40,22 @@ export const Linha = styled.View`
   background-color: #bfc0c0;
   margin: 20px;
 `;
+export const ContainerCardFooter = styled.View`
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+`;
+export const ContainerTextos = styled.View`
+  align-items: center;
+  width: 100%;
+`;
+
+export const ContainerTeste = styled.View`
+  align-items: center;
+  width: 100%;
+`;
 export const TextoTitulo = styled.Text`
   font-size: 22px;
   color: #495057;
@@ -48,6 +64,15 @@ export const TextoSubtitulo = styled.Text`
   font-size: 20px;
   color: #595959;
 `;
+export const TextoSecundario = styled.Text`
+  font-size: 15px;
+  color: #595959;
+  text-align: center;
+  margin: 0 10px;
+  color: #736f72;
+
+  /* margin: 10px 15px; */
+`;
 export const Button = styled.TouchableOpacity`
   width: 58%;
   padding: 8px;
@@ -55,7 +80,7 @@ export const Button = styled.TouchableOpacity`
   background-color: #253342;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;

@@ -10,16 +10,9 @@ import {
   ContainerInputs,
   Button,
   ButtonTexto,
-  TextoMedia,
-  ContainerMedia,
   Inputs,
-  Media,
   MensagemErro,
   ContainerErro,
-  IconContainer,
-  IconBorder,
-  NovoContainer,
-  Image,
 } from "./styles";
 
 import ModalCalculadora from "../../components/ModalCalculadora";

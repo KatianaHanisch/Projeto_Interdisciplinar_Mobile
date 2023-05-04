@@ -40,7 +40,7 @@ export const AreaInput = styled.View`
   flex-direction: row;
 `;
 export const Input = styled.TextInput`
-  background-color: #c6c6c6c5;
+  background-color: #eae6e5;
   width: 90%;
   font-size: 17px;
   padding: 10px;
@@ -77,43 +77,3 @@ export const ButtonTexto = styled.Text`
   font-size: 18px;
   color: #fff;
 `;
-export const ContainerMedia = styled.View`
-  height: 28%;
-  width: 90%;
-  background-color: #ffffff;
-  align-items: center;
-  border-radius: 20px;
-  margin-top: 20px;
-`;
-export const TextoMedia = styled.Text`
-  margin-top: 20px;
-  font-size: 20px;
-  color: #373b44;
-`;
-
-export const IconContainer = styled.View`
-  background-color: #dee2e6;
-  padding: 5px;
-  border-radius: 50px;
-  margin-top: -30px;
-`;
-
-export const Image = styled.Image`
-  width: 40px;
-  height: 40px;
-`;
-
-export const IconBorder = styled.View`
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 50px;
-`;
-
-// export const NovoContainer = styled.View`
-//   border-top-left-radius: 20px;
-//   border-top-right-radius: 20px;
-//   height: 100%;
-//   width: 95%;
-//   align-items: center;
-//   padding: 0 8px;
-// `;

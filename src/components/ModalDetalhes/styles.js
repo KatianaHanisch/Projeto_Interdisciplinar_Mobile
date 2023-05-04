@@ -16,7 +16,7 @@ export const ContainerModal = styled.View`
 `;
 
 export const ModalConteudo = styled.View`
-  background-color: #eae6e5;
+  background-color: #f1f1f1;
   opacity: 0.95;
   width: 100%;
   height: 100%;
