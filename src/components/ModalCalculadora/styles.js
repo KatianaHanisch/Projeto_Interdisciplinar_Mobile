@@ -24,21 +24,22 @@ export const BorderTopModal = styled.View`
 `;
 export const ContainerImage = styled.View`
   width: 300px;
-  height: 170px;
-  /* background-color: #f8f9fa; */
+  height: 200px;
+  align-items: center;
+  /* background-color: #000000; */
   /* padding: 10px; */
-  margin: 20px 0;
+  margin: 10px 0;
   border-radius: 20px;
 `;
 export const Image = styled.Image`
   height: 100%;
-  width: 100%;
+  width: 80%;
 `;
 export const Linha = styled.View`
   width: 90%;
   height: 1px;
   background-color: #bfc0c0;
-  margin: 20px;
+  margin: 15px;
 `;
 export const ContainerCardFooter = styled.View`
   align-items: center;

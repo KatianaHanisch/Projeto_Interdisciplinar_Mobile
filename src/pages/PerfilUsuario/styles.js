@@ -19,7 +19,7 @@ export const Icon = styled.View`
   border-radius: 100px;
 `;
 export const BorderIcon = styled.View`
-  border: 2px solid #515151;
+  border: 2px solid #a6a6a8;
   border-radius: 100px;
   margin-top: 30px;
 `;
@@ -30,7 +30,7 @@ export const ContainerItem = styled.View`
   margin-top: 10px;
 `;
 export const ContainerCard = styled.View`
-  height: 58%;
+  height: 60%;
   width: 93%;
   margin-top: -90px;
   align-items: center;
@@ -52,7 +52,7 @@ export const Texto = styled.Text`
 export const TextoUsuarios = styled.Text`
   font-size: 18px;
   padding-bottom: 10px;
-  color: #515151;
+  color: #505050;
 `;
 
 export const ContainerTeste = styled.View`

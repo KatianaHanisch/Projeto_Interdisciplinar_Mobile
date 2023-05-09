@@ -58,7 +58,7 @@ export default function SignIn() {
         </ContainerImage>
       </ContainerHeader>
       <ContainerItens>
-        <Logo source={require("../../../assets/Logo.png")} />
+        <Logo source={require("../../../assets/Teste.png")} />
         <AreaInput>
           <Input
             placeholder="Digite seu R.A"
@@ -78,7 +78,7 @@ export default function SignIn() {
         </AreaInput>
         {open && (
           <ContainerAlert>
-            <Ionicons name="alert-circle-outline" size={26} color={"#ffffff"} />
+            <Ionicons name="alert-circle-outline" size={26} color={"#f1f1f1"} />
             <TextoAlerta>{erroLogin}</TextoAlerta>
           </ContainerAlert>
         )}

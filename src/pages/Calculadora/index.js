@@ -8,6 +8,10 @@ import {
   Texto,
   Container,
   ContainerInputs,
+  ContainerIconeCalculdadora,
+  BoderIcon,
+  Icon,
+  Image,
   Button,
   ButtonTexto,
   Inputs,
@@ -61,6 +65,13 @@ export default function Calculadora() {
         <Texto>Calculadora</Texto>
       </ContainerCalculadoraHead>
       <ContainerInputs>
+        <ContainerIconeCalculdadora>
+          {/* <BoderIcon> */}
+          {/* <Icon> */}
+          {/* <Image source={require("../../../assets/Teste2.png")} /> */}
+          {/* </Icon> */}
+          {/* </BoderIcon> */}
+        </ContainerIconeCalculdadora>
         <Inputs>
           <AreaInput>
             <Input

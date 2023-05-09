@@ -26,7 +26,7 @@ export const Logo = styled.Image`
   margin-bottom: 30px;
   margin-top: 30px;
   height: 90px;
-  width: 110px;
+  width: 120px;
 `;
 export const ContainerImage = styled.View`
   height: 90px;
@@ -68,7 +68,7 @@ export const ContainerAlert = styled.View`
 `;
 
 export const TextoAlerta = styled.Text`
-  color: #ffff;
+  color: #f1f1f1;
   font-size: 15px;
   padding: 0 5px;
 `;

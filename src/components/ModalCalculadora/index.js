@@ -24,32 +24,32 @@ export default function ModalCalculadora({ fechar, data }) {
   const [image, setImage] = useState(null);
 
   const images = {
-    primeiraImagem: {
-      uri: require("../../../assets/image.png"),
+    imgAprovado: {
+      uri: require("../../../assets/aprovado.png"),
     },
-    segundaImagem: {
-      uri: require("../../../assets/image2.png"),
+    imgExame: {
+      uri: require("../../../assets/exame.png"),
     },
-    terceiraImagem: {
-      uri: require("../../../assets/image3.png"),
+    imgReprovado: {
+      uri: require("../../../assets/reprovado.png"),
     },
   };
 
   function mensagem() {
     if (data >= 7) {
-      setImage(images.primeiraImagem.uri);
+      setImage(images.imgAprovado.uri);
       setTextoInicial("Parabéns você foi aprovado!!");
       setTextoSecundario(
         "Parabéns você foi aprovado. O próximo semestre está lhe aguardando"
       );
     } else if (data < 7 && data > 4) {
-      setImage(images.segundaImagem.uri);
+      setImage(images.imgExame.uri);
       setTextoInicial("Você ficou de exame");
       setTextoSecundario(
         "Suas opções são solicitar a prova substuitiva ou fazer o exame final"
       );
     } else {
-      setImage(images.terceiraImagem.uri);
+      setImage(images.imgReprovado.uri);
       setTextoInicial("Infelizmente você reprovou");
       setTextoSecundario("Entre em contato com o coordenador do seu curso");
     }

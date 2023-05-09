@@ -20,6 +20,31 @@ export const Texto = styled.Text`
   font-size: 25px;
   color: #fff;
 `;
+export const ContainerIconeCalculdadora = styled.View`
+  height: 100px;
+  width: 100%;
+  background-color: #3d405b;
+  margin-top: 25px;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  /* border-radius: 25px; */
+`;
+export const BoderIcon = styled.View`
+  /* background-color: red; */
+  border: 2px solid red;
+  border-radius: 100px;
+`;
+export const Icon = styled.View`
+  border: 2px solid #fff;
+  border-radius: 100px;
+`;
+export const Image = styled.Image`
+  width: 50%;
+  height: 100px;
+  /* border-top-right-radius: 20px; */
+  /* border-top-left-radius: 20px; */
+`;
 export const ContainerInputs = styled.View`
   background-color: #dee2e6;
   align-items: center;
@@ -27,13 +52,18 @@ export const ContainerInputs = styled.View`
   padding: 15px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  /* margin-top: -20px; */
 `;
 export const Inputs = styled.View`
   background-color: #ffff;
   width: 100%;
   align-items: center;
-  padding: 20px 0;
-  border-radius: 20px;
+  padding: 40px 0;
+  margin-top: -20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 `;
 
 export const AreaInput = styled.View`
@@ -45,7 +75,7 @@ export const Input = styled.TextInput`
   font-size: 17px;
   padding: 10px;
   border-radius: 8px;
-  color: #121212;
+  color: #595959;
   margin-bottom: 15px;
 `;
 
@@ -68,7 +98,7 @@ export const Button = styled.TouchableOpacity`
   width: 60%;
   height: 45px;
   border-radius: 5px;
-  background-color: #2a2829;
+  background-color: #253342;
   align-items: center;
   justify-content: center;
   margin-top: 5px;
