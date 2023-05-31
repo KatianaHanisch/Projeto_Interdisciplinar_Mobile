@@ -51,7 +51,7 @@ export const Image = styled.Image`
   width: 50%;
   height: 100px;
   /* border-top-right-radius: 20px; */
-  /* border-top-left-radius: 20px; */
+  border-top-left-radius: 20px;
 `;
 export const ContainerInputs = styled.View`
   background-color: #dee2e6;
