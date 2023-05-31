@@ -30,7 +30,6 @@ export default function Dados({ data, valor }) {
     setModalVisivel(true);
     setTipoModal("financeiro");
   }
-
   function fecharModal() {
     setModalVisivel(false);
   }
@@ -39,6 +38,7 @@ export default function Dados({ data, valor }) {
     <>
       {data.ra == valor ? (
         <Container>
+
           <ContainerCard>
             <ContainerIcon>
               <BorderIcon>
@@ -48,6 +48,7 @@ export default function Dados({ data, valor }) {
               </BorderIcon>
               <CardTitulo>**Pendência Financeira</CardTitulo>
             </ContainerIcon>
+
             <ContainerTextos>
               <CardTexto>
                 {data.financeiro == "ok" ? (
@@ -86,6 +87,7 @@ export default function Dados({ data, valor }) {
               </CardTexto>
             </ContainerTextos>
           </ContainerCard>
+
           <Modal
             visible={modalVisivel}
             transparent={true}

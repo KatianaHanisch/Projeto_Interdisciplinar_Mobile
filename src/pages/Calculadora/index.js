@@ -17,16 +17,17 @@ import {
   Inputs,
   MensagemErro,
   ContainerErro,
+  TextoCalculo
 } from "./styles";
 
 import ModalCalculadora from "../../components/ModalCalculadora";
+import BalaoDeFala from "../../components/BalaoDeFala";
 
 export default function Calculadora() {
   const [notaN1, setNotaN1] = useState("");
   const [notaN2, setNotaN2] = useState("");
   const [notaN3, setNotaN3] = useState("");
   const [media, setMedia] = useState(0);
-  const [mensagem, setMensagem] = useState("");
   const [erro, setErro] = useState("");
   const [modalVisivel, setModalVisivel] = useState(false);
 
@@ -55,7 +56,6 @@ export default function Calculadora() {
     } else {
       setErro("");
     }
-
     setModalVisivel(true);
   }
 
@@ -66,11 +66,12 @@ export default function Calculadora() {
       </ContainerCalculadoraHead>
       <ContainerInputs>
         <ContainerIconeCalculdadora>
-          {/* <BoderIcon> */}
-          {/* <Icon> */}
-          {/* <Image source={require("../../../assets/Teste2.png")} /> */}
-          {/* </Icon> */}
-          {/* </BoderIcon> */}
+          {/* <BoderIcon>
+          <Icon>
+          <Image source={require("../../../assets/Teste2.png")} />
+          </Icon>
+          </BoderIcon> */}
+          <TextoCalculo>Calcule sua média:</TextoCalculo>
         </ContainerIconeCalculdadora>
         <Inputs>
           <AreaInput>
@@ -114,6 +115,7 @@ export default function Calculadora() {
       <Modal visible={modalVisivel} transparent={true} animationType="slide">
         <ModalCalculadora fechar={fecharModal} data={media} />
       </Modal>
+      <BalaoDeFala message='O cálculo de sua média é feito somando suas três notas e dividindo o resultado por três.' />
     </Container>
   );
 }

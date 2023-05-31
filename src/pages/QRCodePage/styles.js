@@ -36,25 +36,23 @@ export const ContainerQRCode = styled.View`
   display: flex;
   justify-content: center;
 `;
-
 export const BackgroundQrCodeRed = styled.View`
   border: 3px solid red;
   background-color: #ffffff;
   padding: 25px;
   width: 85%;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 30px;
   min-height: 295px;
   display: flex;
   justify-content: center;
 `;
-
 export const BackgroundQrCode = styled.View`
   background-color: #ffffff;
   padding: 25px;
   width: 85%;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 30px;
   min-height: 295px;
   justify-content: center;
   border: 3px solid green;

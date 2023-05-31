@@ -7,6 +7,12 @@ export const Container = styled.View`
   background-color: #dee2e6;
 `;
 
+export const TextoCalculo = styled.Text`
+  margin-top: 45px;
+  font-size: 25px;
+  /* color: #595959; */
+`;
+
 export const ContainerCalculadoraHead = styled.View`
   background-color: #2a6041;
   width: 100%;
@@ -23,12 +29,14 @@ export const Texto = styled.Text`
 export const ContainerIconeCalculdadora = styled.View`
   height: 100px;
   width: 100%;
-  background-color: #45444e;
+  /* background-color: #3d405b; */
   margin-top: 25px;
   align-items: center;
+  background-color: #45444e;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   /* border-radius: 25px; */
+  margin-bottom: 10px;
 `;
 export const BoderIcon = styled.View`
   /* background-color: red; */
