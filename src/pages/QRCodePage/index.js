@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { ActivityIndicator, Image, View } from "react-native";
+import { ActivityIndicator, Image } from "react-native";
 import QRCode from "react-native-qrcode-svg";
 import * as Progress from "react-native-progress";
+
+import BalaoDeFala from '../../components/BalaoDeFala'
 
 import {
   ContainerQRCodeHead,
@@ -38,15 +40,15 @@ export default function QRCodePage() {
     setTimeout(() => {
       setQrValue(
         "R.A: " +
-          JSON.parse(ra) +
-          "\n" +
-          "Nome: " +
-          JSON.parse(nome) +
-          " " +
-          JSON.parse(sobrenome) +
-          "\n " +
-          "Data: " +
-          new Date().toLocaleString()
+        JSON.parse(ra) +
+        "\n" +
+        "Nome: " +
+        JSON.parse(nome) +
+        " " +
+        JSON.parse(sobrenome) +
+        "\n " +
+        "Data: " +
+        new Date().toLocaleString()
       );
       setLoading(false);
       setTimeLeft(0);
@@ -115,22 +117,7 @@ export default function QRCodePage() {
           <ButtonTexto>Gerar QR-Code</ButtonTexto>
         </Button>
       )}
-      <View
-        style={{
-          width: "100%",
-          flex: 1,
-          justifyContent: "center",
-          alignItems: "flex-end",
-        }}
-      >
-        <Image
-          source={require("../../../assets/dog.webp")}
-          style={{
-            width: 80,
-            height: 80,
-          }}
-        />
-      </View>
+      <BalaoDeFala message='Clique no botão acima para gerar seu QR-Code!' />
     </Container>
   );
 }

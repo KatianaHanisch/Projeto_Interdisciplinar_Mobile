@@ -94,12 +94,3 @@ export default function PerfilUsuario() {
     </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  containerGradiente: {
-    height: "30%",
-    width: "100%",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

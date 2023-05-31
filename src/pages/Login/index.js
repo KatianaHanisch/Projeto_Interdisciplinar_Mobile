@@ -40,7 +40,6 @@ export default function SignIn() {
       setOpen(false);
       return;
     }
-
     setOpen(true);
 
     const timer = setTimeout(() => {
@@ -76,6 +75,7 @@ export default function SignIn() {
             keyboardType="numeric"
           />
         </AreaInput>
+
         {open && (
           <ContainerAlert>
             <Ionicons name="alert-circle-outline" size={26} color={"#f1f1f1"} />
