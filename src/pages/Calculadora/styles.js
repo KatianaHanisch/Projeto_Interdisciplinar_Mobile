@@ -12,7 +12,7 @@ export const ContainerCalculadoraHead = styled.View`
   width: 100%;
   height: 20%;
   justify-content: flex-start;
-  margin-bottom: -30px;
+  margin-bottom: -25px;
   align-items: center;
 `;
 export const Texto = styled.Text`
@@ -23,7 +23,7 @@ export const Texto = styled.Text`
 export const ContainerIconeCalculdadora = styled.View`
   height: 100px;
   width: 100%;
-  background-color: #3d405b;
+  background-color: #45444e;
   margin-top: 25px;
   align-items: center;
   border-top-right-radius: 20px;

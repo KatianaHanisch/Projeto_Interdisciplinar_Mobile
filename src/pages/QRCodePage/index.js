@@ -29,6 +29,7 @@ export default function QRCodePage() {
 
     const ra = await AsyncStorage.getItem("@ra");
     const nome = await AsyncStorage.getItem("@nome");
+
     const sobrenome = await AsyncStorage.getItem("@sobrenome");
 
     setQrValue("");

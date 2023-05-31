@@ -70,7 +70,7 @@ export const ButtonPendencias = styled.TouchableOpacity`
   width: 38%;
   padding: 8px;
   border-radius: 5px;
-  background-color: #f87575;
+  background-color: #f75f5f;
   align-items: center;
   justify-content: center;
 `;
