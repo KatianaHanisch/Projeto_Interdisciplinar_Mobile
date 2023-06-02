@@ -85,7 +85,7 @@ export default function PerfilUsuario() {
         </ContainerItem>
       </ContainerCard>
       <ContainerFooter>
-        <ImageFooter source={require("../../../assets/ads1.png")} />
+        <ImageFooter source={require("../../../assets/ads.png")} />
         <TextoFooter>
           Aplicativo desenvolvido pelo curso de Análise e Desenvolvimento de
           Sistemas

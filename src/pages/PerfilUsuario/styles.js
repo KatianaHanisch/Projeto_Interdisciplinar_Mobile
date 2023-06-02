@@ -19,7 +19,7 @@ export const Icon = styled.View`
   border-radius: 100px;
 `;
 export const BorderIcon = styled.View`
-  border: 2px solid #a6a6a8;
+  border: 1px solid #7f7f7f;
   border-radius: 100px;
   margin-top: 30px;
 `;

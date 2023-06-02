@@ -8,9 +8,8 @@ export const Container = styled.View`
 `;
 
 export const TextoCalculo = styled.Text`
-  margin-top: 45px;
   font-size: 25px;
-  /* color: #595959; */
+  color: #505050;
 `;
 
 export const ContainerCalculadoraHead = styled.View`
@@ -27,32 +26,15 @@ export const Texto = styled.Text`
   color: #fff;
 `;
 export const ContainerIconeCalculdadora = styled.View`
-  height: 100px;
+  height: 70px;
   width: 100%;
-  /* background-color: #3d405b; */
-  margin-top: 25px;
   align-items: center;
-  background-color: #45444e;
+  justify-content: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  /* border-radius: 25px; */
   margin-bottom: 10px;
 `;
-export const BoderIcon = styled.View`
-  /* background-color: red; */
-  border: 2px solid red;
-  border-radius: 100px;
-`;
-export const Icon = styled.View`
-  border: 2px solid #fff;
-  border-radius: 100px;
-`;
-export const Image = styled.Image`
-  width: 50%;
-  height: 100px;
-  /* border-top-right-radius: 20px; */
-  border-top-left-radius: 20px;
-`;
+
 export const ContainerInputs = styled.View`
   background-color: #dee2e6;
   align-items: center;
@@ -60,7 +42,6 @@ export const ContainerInputs = styled.View`
   padding: 15px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  /* margin-top: -20px; */
 `;
 export const Inputs = styled.View`
   background-color: #ffff;

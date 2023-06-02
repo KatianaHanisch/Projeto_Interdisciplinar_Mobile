@@ -6,7 +6,7 @@ export const Container = styled.KeyboardAvoidingView`
 `;
 
 export const ContainerHeader = styled.View`
-  flex: 1.1;
+  flex: 1;
   width: 100%;
   background: #eae6e5;
   align-items: center;
@@ -14,7 +14,7 @@ export const ContainerHeader = styled.View`
 
 export const ContainerItens = styled.View`
   flex-direction: column;
-  flex: 2;
+  flex: 2.5;
   width: 100%;
   align-items: center;
   background: #f0f0f0;
@@ -25,8 +25,8 @@ export const ContainerItens = styled.View`
 export const Logo = styled.Image`
   margin-bottom: 30px;
   margin-top: 30px;
-  height: 90px;
-  width: 120px;
+  height: 105px;
+  width: 125px;
 `;
 export const ContainerImage = styled.View`
   height: 90px;

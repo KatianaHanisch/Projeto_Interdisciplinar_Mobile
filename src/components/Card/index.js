@@ -38,7 +38,6 @@ export default function Dados({ data, valor }) {
     <>
       {data.ra == valor ? (
         <Container>
-
           <ContainerCard>
             <ContainerIcon>
               <BorderIcon>

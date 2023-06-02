@@ -25,7 +25,8 @@ export default function SignIn() {
 
   const [ra, setRa] = useState("");
   const [password, setPassword] = useState("");
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [tecladoVisivel, setTecladoVisivel] = useState(false);
 
   function handleLogin() {
     Keyboard.dismiss();
@@ -49,15 +50,31 @@ export default function SignIn() {
     return () => clearTimeout(timer);
   }, [erroLogin]);
 
+  useEffect(() => {
+    const showSubscription = Keyboard.addListener("keyboardDidShow", () => {
+      setTecladoVisivel(true);
+    });
+    const hideSubscription = Keyboard.addListener("keyboardDidHide", () => {
+      setTecladoVisivel(false);
+    });
+
+    return () => {
+      showSubscription.remove();
+      hideSubscription.remove();
+    };
+  }, []);
+
   return (
     <Container>
       <ContainerHeader>
         <ContainerImage>
-          <Image source={require("../../../assets/unifasipeLogo.png")} />
+          {tecladoVisivel ? null : (
+            <Image source={require("../../../assets/unifasipeLogo.png")} />
+          )}
         </ContainerImage>
       </ContainerHeader>
       <ContainerItens>
-        <Logo source={require("../../../assets/Teste.png")} />
+        <Logo source={require("../../../assets/logo.png")} />
         <AreaInput>
           <Input
             placeholder="Digite seu R.A"

@@ -17,7 +17,6 @@ export const ContainerModal = styled.View`
 
 export const ModalConteudo = styled.View`
   background-color: #f1f1f1;
-  opacity: 0.95;
   width: 100%;
   height: 100%;
   margin-top: 10px;
@@ -33,8 +32,8 @@ export const BorderTopModal = styled.View`
   border-radius: 20px;
 `;
 export const ModalTexto = styled.Text`
-  margin-top: 60px;
-  margin-bottom: 100px;
+  margin-top: 55px;
+  margin-bottom: 15px;
   font-size: 25px;
   color: #495057;
   font-weight: 600;
@@ -43,13 +42,13 @@ export const BorderInformacoes = styled.View`
   width: 95%;
   height: 1px;
   background-color: #7f7f7f;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 `;
 export const ModalInformacoes = styled.Text`
-  font-size: 14px;
+  font-size: 16px;
   color: #736f72;
   text-align: center;
-  /* margin-top: 20px; */
+  margin: 0 10px;
 `;
 export const ButtonPendencias = styled.TouchableOpacity`
   width: 58%;
@@ -58,7 +57,7 @@ export const ButtonPendencias = styled.TouchableOpacity`
   background-color: #253342;
   align-items: center;
   justify-content: center;
-  margin-top: 12px;
+  margin-top: 25px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;

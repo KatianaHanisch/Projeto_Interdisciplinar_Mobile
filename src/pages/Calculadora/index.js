@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Keyboard, Modal } from "react-native";
 
 import {
@@ -9,15 +9,12 @@ import {
   Container,
   ContainerInputs,
   ContainerIconeCalculdadora,
-  BoderIcon,
-  Icon,
-  Image,
   Button,
   ButtonTexto,
   Inputs,
   MensagemErro,
   ContainerErro,
-  TextoCalculo
+  TextoCalculo,
 } from "./styles";
 
 import ModalCalculadora from "../../components/ModalCalculadora";
@@ -30,10 +27,44 @@ export default function Calculadora() {
   const [media, setMedia] = useState(0);
   const [erro, setErro] = useState("");
   const [modalVisivel, setModalVisivel] = useState(false);
+  const [tecladoVisivel, setTecladoVisivel] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  function limpaErro() {
+    setErro("");
+  }
 
   function fecharModal() {
     setModalVisivel(false);
   }
+
+  useEffect(() => {
+    const showSubscription = Keyboard.addListener("keyboardDidShow", () => {
+      setTecladoVisivel(true);
+    });
+    const hideSubscription = Keyboard.addListener("keyboardDidHide", () => {
+      setTecladoVisivel(false);
+    });
+
+    return () => {
+      showSubscription.remove();
+      hideSubscription.remove();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!erro) {
+      setOpen(false);
+      return;
+    }
+    setOpen(true);
+
+    const timer = setTimeout(() => {
+      setOpen(false);
+      limpaErro();
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [erro]);
 
   function calcularMedia() {
     if (notaN1 == "" || notaN2 == "" || notaN3 == "") return;
@@ -56,22 +87,20 @@ export default function Calculadora() {
     } else {
       setErro("");
     }
+    setNotaN1("");
+    setNotaN2("");
+    setNotaN3("");
     setModalVisivel(true);
   }
 
   return (
     <Container>
       <ContainerCalculadoraHead>
-        <Texto>Calculadora</Texto>
+        {tecladoVisivel ? null : <Texto>Calculadora</Texto>}
       </ContainerCalculadoraHead>
       <ContainerInputs>
         <ContainerIconeCalculdadora>
-          {/* <BoderIcon>
-          <Icon>
-          <Image source={require("../../../assets/Teste2.png")} />
-          </Icon>
-          </BoderIcon> */}
-          <TextoCalculo>Calcule sua média:</TextoCalculo>
+          <TextoCalculo>Calcule sua média</TextoCalculo>
         </ContainerIconeCalculdadora>
         <Inputs>
           <AreaInput>
@@ -101,7 +130,7 @@ export default function Calculadora() {
               onChangeText={(value) => setNotaN3(value)}
             />
           </AreaInput>
-          {erro && (
+          {open && (
             <ContainerErro>
               <MensagemErro>{erro}</MensagemErro>
             </ContainerErro>
@@ -115,7 +144,9 @@ export default function Calculadora() {
       <Modal visible={modalVisivel} transparent={true} animationType="slide">
         <ModalCalculadora fechar={fecharModal} data={media} />
       </Modal>
-      <BalaoDeFala message='O cálculo de sua média é feito somando suas três notas e dividindo o resultado por três.' />
+      {tecladoVisivel ? null : (
+        <BalaoDeFala message="O cálculo de sua média é feito somando suas três notas e dividindo o resultado por três." />
+      )}
     </Container>
   );
 }

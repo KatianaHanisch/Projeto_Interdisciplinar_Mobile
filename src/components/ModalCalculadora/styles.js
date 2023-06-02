@@ -43,7 +43,7 @@ export const Linha = styled.View`
 `;
 export const ContainerCardFooter = styled.View`
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   width: 100%;
   height: 40%;
@@ -71,8 +71,6 @@ export const TextoSecundario = styled.Text`
   text-align: center;
   margin: 0 10px;
   color: #736f72;
-
-  /* margin: 10px 15px; */
 `;
 export const Button = styled.TouchableOpacity`
   width: 58%;
@@ -81,7 +79,7 @@ export const Button = styled.TouchableOpacity`
   background-color: #253342;
   align-items: center;
   justify-content: center;
-  /* margin-top: 40px; */
+  margin-top: 30px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;
