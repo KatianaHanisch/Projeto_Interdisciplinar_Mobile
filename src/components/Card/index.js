@@ -50,7 +50,7 @@ export default function Dados({ data, valor }) {
 
             <ContainerTextos>
               <CardTexto>
-                {data.financeiro == "ok" ? (
+                {data.financeiro == "ok" || data.financeiro == undefined ? (
                   "Sem Pendências"
                 ) : (
                   <ContainerItensPendencias>
@@ -74,7 +74,7 @@ export default function Dados({ data, valor }) {
             </ContainerIcon>
             <ContainerTextos>
               <CardTexto>
-                {data.documentos == "ok" ? (
+                {data.documentos == "ok" || data.documentos == undefined ? (
                   "Sem Pendências"
                 ) : (
                   <ContainerItensPendencias>
