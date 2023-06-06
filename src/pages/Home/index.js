@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import * as Network from "expo-network";
+import React, { useState, useEffect } from "react";
 import {
   StatusBar,
   RefreshControl,

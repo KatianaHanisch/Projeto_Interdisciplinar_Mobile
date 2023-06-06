@@ -1,6 +1,4 @@
 import React, { useContext, useState, useEffect } from "react";
-import { Text, StyleSheet } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 
 import { AuthContext } from "../../context/auth";
 
