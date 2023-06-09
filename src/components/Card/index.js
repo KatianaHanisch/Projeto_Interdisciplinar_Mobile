@@ -22,6 +22,8 @@ export default function Dados({ data, valor }) {
   const [modalVisivel, setModalVisivel] = useState(false);
   const [tipoModal, setTipoModal] = useState("");
 
+  console.log(data)
+
   function abrirModalDocumentos() {
     setModalVisivel(true);
     setTipoModal("documentos");
@@ -50,7 +52,7 @@ export default function Dados({ data, valor }) {
 
             <ContainerTextos>
               <CardTexto>
-                {data.financeiro == "ok" || data.financeiro == undefined ? (
+                {data.financeiro == "ok" || data.financeiro === undefined || data.financeiro === "" ? (
                   "Sem Pendências"
                 ) : (
                   <ContainerItensPendencias>
@@ -74,7 +76,7 @@ export default function Dados({ data, valor }) {
             </ContainerIcon>
             <ContainerTextos>
               <CardTexto>
-                {data.documentos == "ok" || data.documentos == undefined ? (
+                {data.documentos == "ok" || data.documentos == undefined || data.documentos == "undefined" ? (
                   "Sem Pendências"
                 ) : (
                   <ContainerItensPendencias>
