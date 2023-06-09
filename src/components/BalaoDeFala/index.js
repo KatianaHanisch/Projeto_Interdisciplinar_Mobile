@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, TouchableOpacity, StyleSheet, Image, Dimensions } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+  Dimensions,
+} from "react-native";
 
-const { width } = Dimensions.get('window');
+const { width } = Dimensions.get("window");
 
 export default function BalaoDeFala({ message }) {
   const [displayText, setDisplayText] = useState("");
   const [textComplete, setTextComplete] = useState(false);
 
   const animateText = () => {
-    const text = message || '';
+    const text = message || "";
     let i = 0;
 
     setTextComplete(false);
-    setDisplayText('');
+    setDisplayText("");
 
     const interval = setInterval(() => {
       setDisplayText((prevText) => prevText + text[i]);
@@ -21,7 +28,7 @@ export default function BalaoDeFala({ message }) {
         clearInterval(interval);
         setTextComplete(true);
       }
-    }, 70);
+    }, 40);
   };
 
   useEffect(() => {
@@ -42,7 +49,10 @@ export default function BalaoDeFala({ message }) {
           <View style={styles.seta} />
         </View>
       </View>
-      <TouchableOpacity onPress={() => handleImagePress()} style={styles.imageContainer}>
+      <TouchableOpacity
+        onPress={() => handleImagePress()}
+        style={styles.imageContainer}
+      >
         <Image
           source={require("../../../assets/dog.webp")}
           style={styles.image}
@@ -62,18 +72,17 @@ const styles = StyleSheet.create({
     marginBottom: width * 0.1,
     marginRight: -width * 0.2,
   },
-  conteinerBalao: {
-  },
+  conteinerBalao: {},
   balaoDeFala: {
     width: width * 0.6,
     padding: 10,
     backgroundColor: "#f2f2f2",
     borderRadius: 10,
-    marginBottom: 30
+    marginBottom: 30,
   },
   seta: {
     position: "absolute",
-    left: '99%',
+    left: "99%",
     marginTop: -20,
     transform: [{ rotate: "122deg" }],
     borderLeftWidth: 15,

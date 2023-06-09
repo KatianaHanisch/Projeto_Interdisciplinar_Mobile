@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar } from "react-native";
+import { StatusBar, ScrollView } from "react-native";
 
 import {
   Container,
@@ -25,9 +25,11 @@ export default function ModalDetalhes({ fechar, data, tipo }) {
       <ContainerModal>
         <ModalConteudo>
           <BorderTopModal />
-          <ModalTexto>
-            {tipo == "documentos" ? data.documentos : data.financeiro}
-          </ModalTexto>
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <ModalTexto>
+              {tipo == "documentos" ? data.documentos : data.financeiro}
+            </ModalTexto>
+          </ScrollView>
           <BorderInformacoes />
           <ModalInformacoes>
             Para revolver suas pendências, compareça a secretária acadêmica.

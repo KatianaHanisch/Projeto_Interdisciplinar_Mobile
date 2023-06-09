@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   flex: 1;
   justify-content: flex-end;
   align-items: center;
@@ -32,9 +32,11 @@ export const BorderTopModal = styled.View`
   border-radius: 20px;
 `;
 export const ModalTexto = styled.Text`
-  margin-top: 55px;
+  margin-top: 50px;
   margin-bottom: 15px;
-  font-size: 25px;
+  font-size: 24px;
+  padding: 0 20px;
+
   color: #495057;
   font-weight: 600;
 `;
@@ -57,7 +59,8 @@ export const ButtonPendencias = styled.TouchableOpacity`
   background-color: #253342;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 `;
 export const ButtonTexto = styled.Text`
   font-size: 18px;
