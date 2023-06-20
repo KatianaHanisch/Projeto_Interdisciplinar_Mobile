@@ -74,7 +74,7 @@ export default function SignIn() {
         </ContainerImage>
       </ContainerHeader>
       <ContainerItens>
-        <Logo source={require("../../../assets/Logo.png")} />
+        <Logo source={require("../../../assets/logo.png")} />
         <AreaInput>
           <Input
             placeholder="Digite seu R.A"
