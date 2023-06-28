@@ -92,7 +92,6 @@ export default function Calculadora() {
     setNotaN3("");
     setModalVisivel(true);
   }
-  console.log(media);
 
   return (
     <Container>

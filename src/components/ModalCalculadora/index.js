@@ -21,6 +21,7 @@ import {
 export default function ModalCalculadora({ fechar, data }) {
   const [textoInicial, setTextoInicial] = useState("");
   const [textoSecundario, setTextoSecundario] = useState("");
+  const [notaExame, setNotaExame] = useState("");
   const [image, setImage] = useState(null);
 
   const images = {
@@ -45,7 +46,7 @@ export default function ModalCalculadora({ fechar, data }) {
     } else if (data < 7 && data > 4) {
       setImage(images.imgExame.uri);
       setTextoInicial("Você ficou de exame");
-      // setNotaExame(10 - data);
+      setNotaExame(`Você precisa tirar ${(10 - data).toFixed(1)} no exame`);
       setTextoSecundario(
         `Suas opções são solicitar a prova substuitiva ou fazer o exame final`
       );
@@ -81,10 +82,13 @@ export default function ModalCalculadora({ fechar, data }) {
               Sua nota média foi {data.toFixed(1)}
             </TextoSubtitulo>
             <Linha />
-            <TextoSubtitulo>
-              Você precisa tirar {(10 - data).toFixed(1)} no exame
-            </TextoSubtitulo>
-            <Linha />
+            {notaExame && (
+              <>
+                <TextoSubtitulo>{notaExame}</TextoSubtitulo>
+                <Linha />
+              </>
+            )}
+
             <TextoSecundario>{textoSecundario}</TextoSecundario>
           </ContainerTextos>
           <ContainerTeste>
