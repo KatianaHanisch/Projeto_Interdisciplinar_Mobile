@@ -47,9 +47,7 @@ export default function ModalCalculadora({ fechar, data }) {
       setTextoInicial("Você ficou de exame");
       // setNotaExame(10 - data);
       setTextoSecundario(
-        `Suas opções são solicitar a prova substuitiva ou fazer o exame final \n Você precisa tirar ${(
-          10 - data
-        ).toFixed(1)} no exame`
+        `Suas opções são solicitar a prova substuitiva ou fazer o exame final`
       );
     } else {
       setImage(images.imgReprovado.uri);
@@ -81,6 +79,10 @@ export default function ModalCalculadora({ fechar, data }) {
           <ContainerTextos>
             <TextoSubtitulo>
               Sua nota média foi {data.toFixed(1)}
+            </TextoSubtitulo>
+            <Linha />
+            <TextoSubtitulo>
+              Você precisa tirar {(10 - data).toFixed(1)} no exame
             </TextoSubtitulo>
             <Linha />
             <TextoSecundario>{textoSecundario}</TextoSecundario>
