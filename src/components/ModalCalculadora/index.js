@@ -45,8 +45,11 @@ export default function ModalCalculadora({ fechar, data }) {
     } else if (data < 7 && data > 4) {
       setImage(images.imgExame.uri);
       setTextoInicial("Você ficou de exame");
+      // setNotaExame(10 - data);
       setTextoSecundario(
-        "Suas opções são solicitar a prova substuitiva ou fazer o exame final"
+        `Suas opções são solicitar a prova substuitiva ou fazer o exame final \n Você precisa tirar ${(
+          10 - data
+        ).toFixed(1)} no exame`
       );
     } else {
       setImage(images.imgReprovado.uri);
