@@ -29,7 +29,7 @@ No terminal, clone o projeto:
 git clone https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile.git
 ```
 
-Depois abra a pasta criada e rode esse comando no terminal, para instalar as dependências
+Depois abra a pasta e instale as dependências do projeto, executando no terminal:
 
 ```sh
  npm install
