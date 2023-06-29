@@ -52,9 +52,11 @@ Após instalar as dependências, inicie a aplicação com:
 ## :hammer: Funcionalidades do projeto
 
 - `Funcionalidade 1`: Tela de login para o usuário acessar a aplicação
- 
 
-https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/997b774e-ed8a-4ece-8c7a-b6b296325e5d
+![Screen_Recording_20230627-175227_Expo Go](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/b77f8487-e288-4bdd-bda2-c97a91771fec)
+
+
+
 
  
 - `Funcionalidade 2`: Tela inicial onde mostrará as pendências do acadêmico
