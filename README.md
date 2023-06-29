@@ -63,9 +63,9 @@ https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/1011575
 
 
 
-## Desenvolvedores/Contribuintes :octocat:
+## Desenvolvedores :octocat:
 
-Desenvolvedores do projeto
+
 
 | [<img src="https://avatars.githubusercontent.com/u/101157580?v=4" width=115><br><sub>Katiana H. Hanisch</sub>](https://github.com/KatianaHanisch) |  [<img src="https://avatars.githubusercontent.com/u/100394244?v=4" width=115><br><sub>Iago F. Aparecido</sub>](https://github.com/IagoAparecido) | 
 | :---: | :---:   
