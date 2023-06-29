@@ -2,7 +2,7 @@
 
 <h1 align="center">
   <p align="center">App de Pendências</p>
- <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/cbe0a624-cd0e-437b-b728-358f86caf9ed" alt="Docusaurus">
+ <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/cbe0a624-cd0e-437b-b728-358f86caf9ed"  width=115 alt="Docusaurus">
 
 
 
