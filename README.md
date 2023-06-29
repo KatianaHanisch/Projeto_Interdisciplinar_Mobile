@@ -43,4 +43,11 @@ https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/1011575
 https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/bbbe2a47-85e0-4e5e-b7aa-bad40c0d961b
 
 
+
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)]. <a href="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/graphs/contributors"><img src="https://opencollective.com/Docusaurus/contributors.svg?width=890&button=false" /></a>
+
+
+
   
