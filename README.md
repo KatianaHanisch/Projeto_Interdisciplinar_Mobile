@@ -18,7 +18,8 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
 ## Deploy da Aplicação :dash:
 
 <p align="justify">Aplicação Android</p>
-![qrcode](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/2ea13064-c9a1-46c0-9851-e1d51a81f05b)
+
+![qrcode](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8)
 
 
 ## Instalar dependências
