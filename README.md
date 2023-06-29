@@ -40,7 +40,14 @@ Após instalar as dependências, inicie a aplicação com:
  npx expo start
 ```
 
-# :hammer: Funcionalidades do projeto
+## ✔️ Técnicas e tecnologias utilizadas
+
+- ``Expo``
+- ``React Native``
+- ``Google Sheet``
+- ``Styled Components``
+
+## :hammer: Funcionalidades do projeto
 
 - `Funcionalidade 1`: Tela de login para o usuário acessar a aplicação
  
