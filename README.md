@@ -17,7 +17,7 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
 
 ## Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação na Expo: [https://certificates-for-everyone-womakerscode.netlify.app/](https://expo.dev/accounts/kati9898/projects/app-mobile/updates/f67a3d2b-2b57-47ba-8813-e79dce126e3c)
+> Link do deploy da aplicação na Expo: (https://expo.dev/accounts/kati9898/projects/app-mobile/updates/f67a3d2b-2b57-47ba-8813-e79dce126e3c)
 
 
 ## Instalar dependências
