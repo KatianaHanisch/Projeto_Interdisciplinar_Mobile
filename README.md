@@ -1,11 +1,11 @@
 # Projeto Interdisciplinar Ⅱ
 
-<p align="center">
+<div align="center">
   <img src="https://img.shields.io/static/v1?label=react Native&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=Expo&message=deploy&color=blue&style=for-the-badge&logo=expo"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
-</p>
+</div>
 
 ## :books: Descrição do projeto 
 
@@ -18,9 +18,7 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
 
 ## :dash: Deploy da Aplicação para Android 
 
-<div align="center">
- <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8"  width=300 alt="imagem app">
-</div>
+<img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8"  width=300 alt="imagem app">
 
 ## :arrow_forward: Como rodar a aplicação 
 
