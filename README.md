@@ -22,15 +22,11 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
   <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/d2650711-8cdc-4a77-a644-bfed64b45083"  width=250 alt="imagem app">
 </p>
 
-
-
-
-
 ## Deploy da Aplicação para Android :dash:
 
-
- <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8"  width=250 alt="imagem app">
-
+<p align="center">
+ <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8"  width=300 alt="imagem app">
+</p>
 
 ## Como rodar a aplicação :arrow_forward:
 
