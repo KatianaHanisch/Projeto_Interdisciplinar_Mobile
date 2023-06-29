@@ -1,13 +1,12 @@
 # Projeto Interdisciplinar Ⅱ
 
-<h1 align="center">
-  <p align="center">
+<p align="center">
   <img src="https://img.shields.io/static/v1?label=react Native&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=Expo&message=deploy&color=blue&style=for-the-badge&logo=expo"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
-</h1>
+
 
 ## Descrição do projeto 
 
