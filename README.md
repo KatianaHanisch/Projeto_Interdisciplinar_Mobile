@@ -28,7 +28,7 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
  <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8"  width=300 alt="imagem app">
 </p>
 
-## Como rodar a aplicação :arrow_forward:
+## :arrow_forward: Como rodar a aplicação 
 
 No terminal, clone o projeto: 
 
