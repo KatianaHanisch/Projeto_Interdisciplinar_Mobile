@@ -17,7 +17,8 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
 
 ## Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação na Expo: (https://expo.dev/accounts/kati9898/projects/app-mobile/updates/f67a3d2b-2b57-47ba-8813-e79dce126e3c)
+<p align="justify">Aplicação Android</p>
+![qrcode](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/2ea13064-c9a1-46c0-9851-e1d51a81f05b)
 
 
 ## Instalar dependências
