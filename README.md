@@ -3,7 +3,10 @@
 <h1 align="center">
   <p align="center">App de Pendências</p>
 <!--  <img src="https://docusaurus.io/img/slash-introducing.svg" alt="Docusaurus"> -->
-![Screenshot_20230629-151837_Expo Go](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/b3ef23ca-eab1-408e-9551-7e85e9455183)
+
+![Screenshot_20230629-151837_Expo Go](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/cbe0a624-cd0e-437b-b728-358f86caf9ed)
+
+
 </h1>
 
 <p align="center">
