@@ -7,12 +7,12 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
 </p>
 
 <p align="center">
-  <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/cbe0a624-cd0e-437b-b728-358f86caf9ed"  width=250 alt="imagem app">
-  <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/c4faf8aa-9219-478b-a067-4b18e54b1cf2"  width=250 alt="imagem app">
-  <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/4b20435c-e7b0-4057-914c-39ee6d3730a0"  width=250 alt="imagem app">
-  <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/0f84fd22-4266-4aaf-a887-32d738cb6f72"  width=250 alt="imagem app">
-  <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/d2650711-8cdc-4a77-a644-bfed64b45083"  width=250 alt="imagem app">
+  <img src="https://img.shields.io/static/v1?label=react Native&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=Expo&message=deploy&color=blue&style=for-the-badge&logo=expo"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
+
 
 ## :dash: Deploy da Aplicação para Android 
 
