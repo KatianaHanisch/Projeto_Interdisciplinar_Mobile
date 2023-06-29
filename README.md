@@ -48,8 +48,9 @@ https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/1011575
 
 Desenvolvedores do projeto
 
-| [<img src="https://avatars.githubusercontent.com/u/101157580?v=4" width=115><br><sub>Katiana H. Hanisch</sub>](https://github.com/KatianaHanisch) |  [<img src="https://avatars.githubusercontent.com/u/100394244?v=4" width=115><br><sub>Iago F. Aparecido</sub>](https://github.com/IagoAparecido) |  
-| :---: | :---: | :---: 
+| [<img src="https://avatars.githubusercontent.com/u/101157580?v=4" width=115><br><sub>Katiana H. Hanisch</sub>](https://github.com/KatianaHanisch) |  [<img src="https://avatars.githubusercontent.com/u/100394244?v=4" width=115><br><sub>Iago F. Aparecido</sub>](https://github.com/IagoAparecido) | [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |
+| :---: | :---: | :---:  
+
 ## Licença 
 
 The [MIT License]() (MIT)
