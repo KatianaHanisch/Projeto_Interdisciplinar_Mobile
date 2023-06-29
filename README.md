@@ -51,9 +51,7 @@ Após instalar as dependências, inicie a aplicação com:
 
 - `Funcionalidade 1`: Tela de login para o usuário acessar a aplicação
 
-<p align="center">
-  ![Login](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/114eeec7-6275-4380-9d43-502144cb29b9)
-</p>
+![Login](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/114eeec7-6275-4380-9d43-502144cb29b9)
  
 - `Funcionalidade 2`: Tela inicial onde mostrará as pendências do acadêmico
 
