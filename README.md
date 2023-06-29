@@ -1,6 +1,5 @@
-# Projeto Interdisciplinar Ⅱ
+# Projeto Interdisciplinar 
 
-<h1 align="center">
 <p align="center">App de Pendências</p>
 <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/cbe0a624-cd0e-437b-b728-358f86caf9ed"  width=200 alt="imagem app">
 <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/c4faf8aa-9219-478b-a067-4b18e54b1cf2"  width=200 alt="imagem app">
@@ -10,7 +9,7 @@
 
 
 
-</h1>
+
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react Native&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
