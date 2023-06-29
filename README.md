@@ -96,9 +96,9 @@ https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/1011575
 
 ## Licença 
 
-<p align="center">
+
   The [MIT License]() (MIT)
   Copyright :copyright: 2023 - Pendências
-</p>
+
 
   
