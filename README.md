@@ -29,7 +29,7 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
 ## Deploy da Aplicação para Android :dash:
 
 
- <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8"  width=150 alt="imagem app">
+ <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8"  width=250 alt="imagem app">
 
 
 ## Como rodar a aplicação :arrow_forward:
