@@ -14,13 +14,13 @@
 O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os acadêmicos a ter acesso as suas informações acadêmicas de forma rápida e simples. A aplicação contará com uma tela de login para garantir a segurança dos dados do usuário. Ao efetuar o login teremos acesso a tela de home que contará com as informações do acadêmico, a aplicação também contará com nosso menu de navegação para a calculadora de média e o gerador de QR-code que será utilizado para substituir a lista de presença física. Visando assim, facilitar e simplificar a forma que é feita a lista de presença na universidade.
 </p>
 
-
+<h1 align="center">
   <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/cbe0a624-cd0e-437b-b728-358f86caf9ed"  width=250 alt="imagem app">
   <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/c4faf8aa-9219-478b-a067-4b18e54b1cf2"  width=250 alt="imagem app">
   <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/4b20435c-e7b0-4057-914c-39ee6d3730a0"  width=250 alt="imagem app">
   <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/0f84fd22-4266-4aaf-a887-32d738cb6f72"  width=250 alt="imagem app">
   <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/d2650711-8cdc-4a77-a644-bfed64b45083"  width=250 alt="imagem app">
-
+</h1>
 
 
 
