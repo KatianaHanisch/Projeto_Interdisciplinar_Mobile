@@ -1,5 +1,11 @@
 # Projeto Interdisciplinar Ⅱ
 
+<h1 align="center">
+  <p align="center">App de Pendências</p>
+<!--  <img src="https://docusaurus.io/img/slash-introducing.svg" alt="Docusaurus"> -->
+![Screenshot_20230629-151837_Expo Go](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/b3ef23ca-eab1-408e-9551-7e85e9455183)
+</h1>
+
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react Native&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=Expo&message=deploy&color=blue&style=for-the-badge&logo=expo"/>
