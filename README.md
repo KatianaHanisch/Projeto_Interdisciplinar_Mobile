@@ -53,33 +53,29 @@ Após instalar as dependências, inicie a aplicação com:
 
 - `Funcionalidade 1`: Tela de login para o usuário acessar a aplicação
 
-![Screen_Recording_20230627-175227_Expo Go](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/b77f8487-e288-4bdd-bda2-c97a91771fec)
-
-
-
+![Login](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/114eeec7-6275-4380-9d43-502144cb29b9)
 
  
 - `Funcionalidade 2`: Tela inicial onde mostrará as pendências do acadêmico
 
 
-https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/28dee490-4c19-48dc-814e-a33126255484
+![Incial](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/55d0db72-1cf1-4beb-9f8d-e1eb89910c5b)
+
 
 
 - `Funcionalidade 3`: Calculadora de média para os acadêmicos
 
-
-https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/df1b1a9f-3390-4169-accd-4d3c757b00cb
+![Calculadora](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/f5af8b74-8874-418a-86eb-f84096a75905)
 
 
 - `Funcionalidade 4`: Gerador de QR-Code para registro de presença para os acadêmicos
 
-https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/dc9d9981-2fbf-437a-b197-1a7402156cd9
+![Qr-Code](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/a94ca5c3-bf4f-469d-90f2-5462da90fc1b)
 
 
 - `Funcionalidade 5`: Perfil do usuário com suas informações acadêmicas, juntamente com a opção de sair da conta
-
-
-https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/bbbe2a47-85e0-4e5e-b7aa-bad40c0d961b
+- 
+![Perfil](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/149b05e8-5c4f-4573-9df1-231afebc7d97)
 
 
 
