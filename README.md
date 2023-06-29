@@ -1,17 +1,19 @@
 # Projeto Interdisciplinar Ⅱ
 
-## :books: Descrição do projeto 
-
-<p align="justify">
-O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os acadêmicos a ter acesso as suas informações acadêmicas de forma rápida e simples. A aplicação contará com uma tela de login para garantir a segurança dos dados do usuário. Ao efetuar o login teremos acesso a tela de home que contará com as informações do acadêmico, a aplicação também contará com nosso menu de navegação para a calculadora de média e o gerador de QR-code que será utilizado para substituir a lista de presença física. Visando assim, facilitar e simplificar a forma que é feita a lista de presença na universidade.
-</p>
-
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react Native&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=Expo&message=deploy&color=blue&style=for-the-badge&logo=expo"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
+
+## :books: Descrição do projeto 
+
+<p align="justify">
+O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os acadêmicos a ter acesso as suas informações acadêmicas de forma rápida e simples. A aplicação contará com uma tela de login para garantir a segurança dos dados do usuário. Ao efetuar o login teremos acesso a tela de home que contará com as informações do acadêmico, a aplicação também contará com nosso menu de navegação para a calculadora de média e o gerador de QR-code que será utilizado para substituir a lista de presença física. Visando assim, facilitar e simplificar a forma que é feita a lista de presença na universidade.
+</p>
+
+
 
 
 ## :dash: Deploy da Aplicação para Android 
