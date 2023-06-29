@@ -21,12 +21,21 @@ O projeto consiste em uma aplicação mobile, que terá como foco auxiliar os ac
 ![qrcode](https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/181ad920-0c1c-4ab2-8626-753e897214e8)
 
 
-## Instalar dependências
+## Como rodar a aplicação :arrow_forward:
+
+No terminal, clone o projeto: 
+
+```
+git clone https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile.git
+```
+
+Depois abra a pasta criada e rode esse comando no terminal, para instalar as dependências
+
 ```sh
  npm install
 ```
 
-## Iniciar aplicação
+Após instalar as dependências, inicie a aplicação com:
 ```sh
  npx expo start
 ```
