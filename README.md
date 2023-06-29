@@ -1,6 +1,6 @@
 # Projeto Interdisciplinar 
 
-<p align="center">App de Pendências</p>
+<h1 align="center">App de Pendências</p>
 <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/cbe0a624-cd0e-437b-b728-358f86caf9ed"  width=200 alt="imagem app">
 <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/c4faf8aa-9219-478b-a067-4b18e54b1cf2"  width=200 alt="imagem app">
 <img src="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile/assets/101157580/4b20435c-e7b0-4057-914c-39ee6d3730a0"  width=200 alt="imagem app">
